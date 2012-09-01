@@ -1,0 +1,15 @@
+<package>
+  <description brief="drone_demo">
+
+     drone_demo
+
+  </description>
+  <author>rujian</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/drone_demo</url>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+
