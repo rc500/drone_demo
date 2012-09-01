@@ -6,12 +6,12 @@ from drone_demo.msg import Navdata
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Empty
 
-from time import time
+from time import time, sleep
 import sys
 
 class demo_controller:
 	reftm = time()
-	cmd_log = []
+	cmd_log = {'tm':[], 'cmd':[]}
 	nd_log = {'tm':[], 'ph':[], 'th':[], 'ps':[], 'vx':[], 'vy':[], 'vz':[], 'al':[]}
 	def navdataCallback(self, msg):
 		self.nd_logger(msg)
@@ -34,13 +34,9 @@ class demo_controller:
 
 def main(args):
 	rospy.init_node('drone_demo_controller', anonymous=True)
+	
 	dc = demo_controller()
-	try:
-		rospy.spin()
-	except KeyboardInterrupt:
-		print "Shutting down"
-	finally:
-		print dc.nd_log
-
+	rospy.spin()
+	
 if __name__ == '__main__':
 	main(sys.argv)
