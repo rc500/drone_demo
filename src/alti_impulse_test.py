@@ -21,10 +21,9 @@ class alti_tester:
 		self.cmd_log = {'tm':[], 'cmd':[]}
 		self.nd_log = {'tm':[], 'ph':[], 'th':[], 'ps':[], 'vx':[], 'vy':[], 'vz':[], 'al':[]}
 		self.twist = Twist()
-		print 'in constructor', self.twist
 		self.vzcmd = vzcmdb
 		self.vzdur = vzdurb
-		print 'in constructor. vzcmd,vzdur =', self.vzcmd, self.vzdur
+		#print 'in constructor. vzcmd,vzdur =', self.vzcmd, self.vzdur
 		self.cmdpub = rospy.Publisher('/cmd_vel', Twist)
 		self.landpub = rospy.Publisher('/ardrone/land', Empty)
 		self.resetpub = rospy.Publisher('/ardrone/reset', Empty)
@@ -34,13 +33,13 @@ class alti_tester:
 	def nd_logger(self,msg):
 		self.nd_log['tm'].append(time()-self.reftm)
 		self.nd_log['th'].append(msg.rotY)
-		self.nd_log['vz'].append(msg.vz)
+		self.nd_log['vz'].append(msg.vz*1000)
 		self.nd_log['al'].append(msg.altd)
 		#print msg.header.seq
 	
 	def cmd_logger(self,cmd):
 		self.cmd_log['tm'].append(time()-self.reftm)
-		self.cmd_log['cmd'].append(cmd)
+		self.cmd_log['cmd'].append(cmd*1000)
 	
 	def clear_twist(self):
 		self.twist.linear.x = 0; self.twist.linear.y = 0; self.twist.linear.z = 0
@@ -51,7 +50,7 @@ class alti_tester:
 		
 		self.cmd_logger(0)
 		self.takeoffpub.publish(Empty())	;print 'takeoff' #takeoff
-		sleep(8); print '4'; sleep(1); print '3'; sleep(1); print '2'; sleep(1); print '1'; sleep(1)
+		sleep(12); print '4'; sleep(1); print '3'; sleep(1); print '2'; sleep(1); print '1'; sleep(1)
 		
 		self.cmd_logger(0)
 		self.twist.linear.z = self.vzcmd
@@ -67,26 +66,29 @@ class alti_tester:
 		
 		self.cmd_logger(0)
 		self.landpub.publish(Empty())		;print 'land' #land
-		sleep(2)
+		sleep(1)
 		
 		if not raw_input('show and save?') == 'n':
 			pl.xlabel('time (s)')
-			pl.plot(self.cmd_log['tm'],self.cmd_log['cmd'], 'b-')
+			pl.ylim(0,2400)
+			pl.plot(self.cmd_log['tm'],self.cmd_log['cmd'], 'b-s')
 			pl.plot(self.nd_log['tm'],self.nd_log['vz'], 'g-+')
 			pl.plot(self.nd_log['tm'],self.nd_log['al'], 'r-+')
+			pl.grid(True)
 			pl.show()
+			#print self.nd_log
 
 
 def main(args):
-	print 'executing main'
 	if len(args) != 3 or float(args[1]) == 0 or float(args[2]) == 0:
-		vzcmda = 0.1; vzdura = 0.4
+		vzcmda = 0.4; vzdura = 3
 	else:
 		vzcmda = float(args[1]); vzdura = float(args[2])
+	print '\nalti_impulse_test.py\nvzcmd = %(a)f\nvzdur = %(b)f\n'%{'a':vzcmda, 'b':vzdura}
 	rospy.init_node('alti_tester', anonymous=True)
 	at = alti_tester(vzcmda, vzdura)
 	at.test_seq()
-	rospy.spin()
+	#rospy.spin()
 	
 if __name__ == '__main__':
 	main(sys.argv)
