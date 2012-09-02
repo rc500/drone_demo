@@ -1,0 +1,12 @@
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/src/CMakeFiles/aruco.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_board_pix2meters.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_create_board.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_create_marker.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_selectoptimalmarkers.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_simple.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_simple_board.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_test.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_test_board.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_test_board_gl.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/utils/CMakeFiles/aruco_test_gl.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/aruco-1.2.4/build/CMakeFiles/uninstall.dir

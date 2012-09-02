@@ -1,0 +1,12 @@
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_create_board.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_create_marker.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_simple.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_simple_board.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_gl.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco/CMakeFiles/caruco.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264/CMakeFiles/p264.dir
+/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/CMakeFiles/uninstall.dir
