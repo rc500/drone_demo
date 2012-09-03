@@ -55,6 +55,13 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/drone_demo/msg/__init__.py
 ../src/drone_demo/msg/_Navdata.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
 ../src/drone_demo/msg/_Navdata.py: ../manifest.xml
 ../src/drone_demo/msg/_Navdata.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/drone_demo/msg/_Navdata.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/drone_demo/msg/_Navdata.py: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+../src/drone_demo/msg/_Navdata.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/drone_demo/msg/_Navdata.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/drone_demo/msg/_Navdata.py: /opt/ros/fuerte/stacks/vision_opencv/cv_bridge/manifest.xml
+../src/drone_demo/msg/_Navdata.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/drone_demo/msg/_Navdata.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/drone_demo/msg/_Navdata.py"
 	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/msg/Navdata.msg

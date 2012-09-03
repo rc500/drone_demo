@@ -50,6 +50,13 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/drone_demo/Navdata.h
 ../msg_gen/cpp/include/drone_demo/Navdata.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
 ../msg_gen/cpp/include/drone_demo/Navdata.h: ../manifest.xml
 ../msg_gen/cpp/include/drone_demo/Navdata.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/drone_demo/Navdata.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/drone_demo/Navdata.h: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+../msg_gen/cpp/include/drone_demo/Navdata.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/drone_demo/Navdata.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/drone_demo/Navdata.h: /opt/ros/fuerte/stacks/vision_opencv/cv_bridge/manifest.xml
+../msg_gen/cpp/include/drone_demo/Navdata.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/drone_demo/Navdata.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/drone_demo/Navdata.h"
 	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/msg/Navdata.msg

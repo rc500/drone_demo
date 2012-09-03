@@ -12,7 +12,7 @@ logging.basicConfig(level = logging.DEBUG)
 import os
 import sys
 from numpy import array
-from PIL import Image
+import Image as PImage
 import cv
 
 # Where is this file?
@@ -35,13 +35,14 @@ def main():
   cv.NamedWindow("test",cv.CV_WINDOW_AUTOSIZE)
   
   # Load image into required formats
-  im = Image.open(sys.argv[1]).convert('RGB')
-  CV_image = cv.LoadImage(sys.argv[1])
+  #im = PImage.open(sys.argv[1]).convert('RGB')
+  cv_im = cv.LoadImage(sys.argv[1])
+  im = PImage.fromstring('RGB',cv.GetSize(cv_im),cv_im.tostring())
   
   # Find midpoint of image
-  CV_image_size = cv.GetSize(CV_image)
-  CV_image_midpoint = (CV_image_size[0]/2,CV_image_size[1]/2)
-  print CV_image_midpoint
+  cv_im_size = cv.GetSize(cv_im)
+  cv_im_midp = (cv_im_size[0]/2,cv_im_size[1]/2)
+  print cv_im_midp
 
   #arr = array(im) #will need this if wanting to draw onto image
   
@@ -50,9 +51,9 @@ def main():
 	  coord = (m.centroid_x(), m.centroid_y())
 	  print coord
 	  print m.id()
-	  cv.Line(CV_image,CV_image_midpoint,coord,cv.Scalar(200,200,200))
+	  cv.Line(cv_im,cv_im_midp,coord,cv.Scalar(200,200,200))
 
-  cv.ShowImage("test",CV_image)
+  cv.ShowImage("test",cv_im)
   
   cv.WaitKey()
 
