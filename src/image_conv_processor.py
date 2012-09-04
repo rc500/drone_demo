@@ -28,9 +28,9 @@ class image_conv_processor:
     self.foundmarkerpub = rospy.Publisher("/foundmarker",Empty)
     #cv.NamedWindow("Image window", 1)
     self.bridge = CvBridge()
-    self.image_sub = rospy.Subscriber("/ardrone/image_raw",Image,self.callback)
+    self.image_sub = rospy.Subscriber("/ardrone/image_raw",Image,self.image_rawcallback)
 
-  def callback(self,data):
+  def image_raw_callback(self,data):
     try:
       cv_oim = self.bridge.imgmsg_to_cv(data, "bgr8")
     except CvBridgeError, e:
