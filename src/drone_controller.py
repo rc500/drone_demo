@@ -52,9 +52,11 @@ class demo_controller:
 		pass
 	
 	def main_procedure(self):
-		sleep(0.5)
+		sleep(0.5)	#nb: sleep 0.3 is min necessary wait before you can publish. perhaps bc ros master takes time to setup publisher.
+		self.camselectpub.publish(1);	print 'published camselect = downward facing cam'
+		#self.icp = image_conv_processor()
 		self.takeoffpub.publish(Empty())
-		sleep(3); print '4'; sleep(1); print '3'; sleep(1); print '2'; sleep(1); print '1'; sleep(1)
+		sleep(7); print '4'; sleep(1); print '3'; sleep(1); print '2'; sleep(1); print '1'; sleep(1)
 		rospy.Timer(rospy.Duration(1.0/40), self.main_procedure_callback)
 	
 	def main_procedure_callback(self,event):
@@ -71,9 +73,6 @@ class demo_controller:
 def main(args):
 	rospy.init_node('drone_demo_controller', anonymous=True)
 	dc = demo_controller()
-	sleep(0.5)	#nb: sleep 0.3 is min necessary wait before you can publish. perhaps bc ros master takes time to setup publisher.
-	dc.camselectpub.publish(1)
-	print 'published camselect = downward facing cam'
 	dc.main_procedure()
 	rospy.spin()
 	
