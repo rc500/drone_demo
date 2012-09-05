@@ -1,0 +1,17 @@
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/ROSBUILD_genmsg_cpp.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/ROSBUILD_genmsg_lisp.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/ROSBUILD_genmsg_py.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/ROSBUILD_gensrv_cpp.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/ROSBUILD_gensrv_lisp.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/clean-test-results.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/rosbuild_precompile.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/rosbuild_premsgsrvgen.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/rospack_genmsg.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/rospack_genmsg_all.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/rospack_genmsg_libexe.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/rospack_gensrv.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/test.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/test-future.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/test-results.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/test-results-run.dir
+/home/rujian/fuerte_workspace/drone_demo/CMakeFiles/tests.dir

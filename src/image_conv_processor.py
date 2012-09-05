@@ -61,8 +61,8 @@ class image_conv_processor:
 		coords = []; mids=[]
 		for m in markers:
 			centroid = (m.centroid_x(), m.centroid_y())
-			#coord = (im_size[1]/2-centroid[1], im_size[0]/2-centroid[0])	#drone coord and cv coord are different!
-			coord = (im_size[0]/2-centroid[0], im_size[1]/2-centroid[1])
+			coord = (im_size[1]/2-centroid[1], im_size[0]/2-centroid[0])	#drone coord and cv coord are different!
+			#coord = (im_size[0]/2-centroid[0], im_size[1]/2-centroid[1])
 			coords.append(coord)
 			mids.append(m.id())
 			cv.Line(cv_im,cv_im_midp,centroid,cv.Scalar(0,0,255))
