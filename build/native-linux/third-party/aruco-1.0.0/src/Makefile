@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native
+CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/drone_demo/native
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux
+CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/drone_demo/build/native-linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,7 +98,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +108,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CPackSourceConfig.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -127,14 +127,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src/CMakeFiles/progress.marks
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles 0
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src/CMakeFiles/progress.marks
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/clean
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/preinstall
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/preinstall
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/rule:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/rule
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/rule
 .PHONY : third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/rule
 
 # Convenience name for target.
@@ -167,7 +167,7 @@ aruco: third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/rule
 
 # fast build rule for target.
 aruco/fast:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build
 .PHONY : aruco/fast
 
 board.o: board.cpp.o
@@ -175,7 +175,7 @@ board.o: board.cpp.o
 
 # target to build an object file
 board.cpp.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/board.cpp.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/board.cpp.o
 .PHONY : board.cpp.o
 
 board.i: board.cpp.i
@@ -183,7 +183,7 @@ board.i: board.cpp.i
 
 # target to preprocess a source file
 board.cpp.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/board.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/board.cpp.i
 .PHONY : board.cpp.i
 
 board.s: board.cpp.s
@@ -191,7 +191,7 @@ board.s: board.cpp.s
 
 # target to generate assembly for a file
 board.cpp.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/board.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/board.cpp.s
 .PHONY : board.cpp.s
 
 boarddetector.o: boarddetector.cpp.o
@@ -199,7 +199,7 @@ boarddetector.o: boarddetector.cpp.o
 
 # target to build an object file
 boarddetector.cpp.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/boarddetector.cpp.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/boarddetector.cpp.o
 .PHONY : boarddetector.cpp.o
 
 boarddetector.i: boarddetector.cpp.i
@@ -207,7 +207,7 @@ boarddetector.i: boarddetector.cpp.i
 
 # target to preprocess a source file
 boarddetector.cpp.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/boarddetector.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/boarddetector.cpp.i
 .PHONY : boarddetector.cpp.i
 
 boarddetector.s: boarddetector.cpp.s
@@ -215,7 +215,7 @@ boarddetector.s: boarddetector.cpp.s
 
 # target to generate assembly for a file
 boarddetector.cpp.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/boarddetector.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/boarddetector.cpp.s
 .PHONY : boarddetector.cpp.s
 
 cameraparameters.o: cameraparameters.cpp.o
@@ -223,7 +223,7 @@ cameraparameters.o: cameraparameters.cpp.o
 
 # target to build an object file
 cameraparameters.cpp.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cameraparameters.cpp.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cameraparameters.cpp.o
 .PHONY : cameraparameters.cpp.o
 
 cameraparameters.i: cameraparameters.cpp.i
@@ -231,7 +231,7 @@ cameraparameters.i: cameraparameters.cpp.i
 
 # target to preprocess a source file
 cameraparameters.cpp.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cameraparameters.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cameraparameters.cpp.i
 .PHONY : cameraparameters.cpp.i
 
 cameraparameters.s: cameraparameters.cpp.s
@@ -239,7 +239,7 @@ cameraparameters.s: cameraparameters.cpp.s
 
 # target to generate assembly for a file
 cameraparameters.cpp.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cameraparameters.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cameraparameters.cpp.s
 .PHONY : cameraparameters.cpp.s
 
 cvdrawingutils.o: cvdrawingutils.cpp.o
@@ -247,7 +247,7 @@ cvdrawingutils.o: cvdrawingutils.cpp.o
 
 # target to build an object file
 cvdrawingutils.cpp.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cvdrawingutils.cpp.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cvdrawingutils.cpp.o
 .PHONY : cvdrawingutils.cpp.o
 
 cvdrawingutils.i: cvdrawingutils.cpp.i
@@ -255,7 +255,7 @@ cvdrawingutils.i: cvdrawingutils.cpp.i
 
 # target to preprocess a source file
 cvdrawingutils.cpp.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cvdrawingutils.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cvdrawingutils.cpp.i
 .PHONY : cvdrawingutils.cpp.i
 
 cvdrawingutils.s: cvdrawingutils.cpp.s
@@ -263,7 +263,7 @@ cvdrawingutils.s: cvdrawingutils.cpp.s
 
 # target to generate assembly for a file
 cvdrawingutils.cpp.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cvdrawingutils.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/cvdrawingutils.cpp.s
 .PHONY : cvdrawingutils.cpp.s
 
 marker.o: marker.cpp.o
@@ -271,7 +271,7 @@ marker.o: marker.cpp.o
 
 # target to build an object file
 marker.cpp.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/marker.cpp.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/marker.cpp.o
 .PHONY : marker.cpp.o
 
 marker.i: marker.cpp.i
@@ -279,7 +279,7 @@ marker.i: marker.cpp.i
 
 # target to preprocess a source file
 marker.cpp.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/marker.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/marker.cpp.i
 .PHONY : marker.cpp.i
 
 marker.s: marker.cpp.s
@@ -287,7 +287,7 @@ marker.s: marker.cpp.s
 
 # target to generate assembly for a file
 marker.cpp.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/marker.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/marker.cpp.s
 .PHONY : marker.cpp.s
 
 markerdetector.o: markerdetector.cpp.o
@@ -295,7 +295,7 @@ markerdetector.o: markerdetector.cpp.o
 
 # target to build an object file
 markerdetector.cpp.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/markerdetector.cpp.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/markerdetector.cpp.o
 .PHONY : markerdetector.cpp.o
 
 markerdetector.i: markerdetector.cpp.i
@@ -303,7 +303,7 @@ markerdetector.i: markerdetector.cpp.i
 
 # target to preprocess a source file
 markerdetector.cpp.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/markerdetector.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/markerdetector.cpp.i
 .PHONY : markerdetector.cpp.i
 
 markerdetector.s: markerdetector.cpp.s
@@ -311,7 +311,7 @@ markerdetector.s: markerdetector.cpp.s
 
 # target to generate assembly for a file
 markerdetector.cpp.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/markerdetector.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/build.make third-party/aruco-1.0.0/src/CMakeFiles/aruco.dir/markerdetector.cpp.s
 .PHONY : markerdetector.cpp.s
 
 # Help Target
@@ -358,6 +358,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

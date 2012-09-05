@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/board.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/board.h
 opencv/cv.h
 -
 string
@@ -14,15 +14,15 @@ string
 vector
 -
 marker.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
 opencv/cv.h
 -
 string
 -
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
 vector
 -
 iostream
@@ -30,11 +30,11 @@ iostream
 opencv/cv.h
 -
 cameraparameters.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_create_board.cpp
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_create_board.cpp
 board.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils/board.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils/board.h
 cstdio
 -
 opencv/cv.h

@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native
+CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/drone_demo/native
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux
+CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/drone_demo/build/native-linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,7 +98,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +108,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CPackSourceConfig.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -127,14 +127,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264/CMakeFiles/progress.marks
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles 0
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264/CMakeFiles/progress.marks
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/clean
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/preinstall
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/preinstall
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libp264/CMakeFiles/p264.dir/rule:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/CMakeFiles/p264.dir/rule
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 libp264/CMakeFiles/p264.dir/rule
 .PHONY : libp264/CMakeFiles/p264.dir/rule
 
 # Convenience name for target.
@@ -167,7 +167,7 @@ p264: libp264/CMakeFiles/p264.dir/rule
 
 # fast build rule for target.
 p264/fast:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/build
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/build
 .PHONY : p264/fast
 
 VLIB/P263/p263_codec.o: VLIB/P263/p263_codec.c.o
@@ -175,7 +175,7 @@ VLIB/P263/p263_codec.o: VLIB/P263/p263_codec.c.o
 
 # target to build an object file
 VLIB/P263/p263_codec.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o
 .PHONY : VLIB/P263/p263_codec.c.o
 
 VLIB/P263/p263_codec.i: VLIB/P263/p263_codec.c.i
@@ -183,7 +183,7 @@ VLIB/P263/p263_codec.i: VLIB/P263/p263_codec.c.i
 
 # target to preprocess a source file
 VLIB/P263/p263_codec.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.i
 .PHONY : VLIB/P263/p263_codec.c.i
 
 VLIB/P263/p263_codec.s: VLIB/P263/p263_codec.c.s
@@ -191,7 +191,7 @@ VLIB/P263/p263_codec.s: VLIB/P263/p263_codec.c.s
 
 # target to generate assembly for a file
 VLIB/P263/p263_codec.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.s
 .PHONY : VLIB/P263/p263_codec.c.s
 
 VLIB/P263/p263_gob_layer.o: VLIB/P263/p263_gob_layer.c.o
@@ -199,7 +199,7 @@ VLIB/P263/p263_gob_layer.o: VLIB/P263/p263_gob_layer.c.o
 
 # target to build an object file
 VLIB/P263/p263_gob_layer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o
 .PHONY : VLIB/P263/p263_gob_layer.c.o
 
 VLIB/P263/p263_gob_layer.i: VLIB/P263/p263_gob_layer.c.i
@@ -207,7 +207,7 @@ VLIB/P263/p263_gob_layer.i: VLIB/P263/p263_gob_layer.c.i
 
 # target to preprocess a source file
 VLIB/P263/p263_gob_layer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.i
 .PHONY : VLIB/P263/p263_gob_layer.c.i
 
 VLIB/P263/p263_gob_layer.s: VLIB/P263/p263_gob_layer.c.s
@@ -215,7 +215,7 @@ VLIB/P263/p263_gob_layer.s: VLIB/P263/p263_gob_layer.c.s
 
 # target to generate assembly for a file
 VLIB/P263/p263_gob_layer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.s
 .PHONY : VLIB/P263/p263_gob_layer.c.s
 
 VLIB/P263/p263_huffman.o: VLIB/P263/p263_huffman.c.o
@@ -223,7 +223,7 @@ VLIB/P263/p263_huffman.o: VLIB/P263/p263_huffman.c.o
 
 # target to build an object file
 VLIB/P263/p263_huffman.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o
 .PHONY : VLIB/P263/p263_huffman.c.o
 
 VLIB/P263/p263_huffman.i: VLIB/P263/p263_huffman.c.i
@@ -231,7 +231,7 @@ VLIB/P263/p263_huffman.i: VLIB/P263/p263_huffman.c.i
 
 # target to preprocess a source file
 VLIB/P263/p263_huffman.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.i
 .PHONY : VLIB/P263/p263_huffman.c.i
 
 VLIB/P263/p263_huffman.s: VLIB/P263/p263_huffman.c.s
@@ -239,7 +239,7 @@ VLIB/P263/p263_huffman.s: VLIB/P263/p263_huffman.c.s
 
 # target to generate assembly for a file
 VLIB/P263/p263_huffman.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.s
 .PHONY : VLIB/P263/p263_huffman.c.s
 
 VLIB/P263/p263_mb_layer.o: VLIB/P263/p263_mb_layer.c.o
@@ -247,7 +247,7 @@ VLIB/P263/p263_mb_layer.o: VLIB/P263/p263_mb_layer.c.o
 
 # target to build an object file
 VLIB/P263/p263_mb_layer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o
 .PHONY : VLIB/P263/p263_mb_layer.c.o
 
 VLIB/P263/p263_mb_layer.i: VLIB/P263/p263_mb_layer.c.i
@@ -255,7 +255,7 @@ VLIB/P263/p263_mb_layer.i: VLIB/P263/p263_mb_layer.c.i
 
 # target to preprocess a source file
 VLIB/P263/p263_mb_layer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.i
 .PHONY : VLIB/P263/p263_mb_layer.c.i
 
 VLIB/P263/p263_mb_layer.s: VLIB/P263/p263_mb_layer.c.s
@@ -263,7 +263,7 @@ VLIB/P263/p263_mb_layer.s: VLIB/P263/p263_mb_layer.c.s
 
 # target to generate assembly for a file
 VLIB/P263/p263_mb_layer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.s
 .PHONY : VLIB/P263/p263_mb_layer.c.s
 
 VLIB/P263/p263_picture_layer.o: VLIB/P263/p263_picture_layer.c.o
@@ -271,7 +271,7 @@ VLIB/P263/p263_picture_layer.o: VLIB/P263/p263_picture_layer.c.o
 
 # target to build an object file
 VLIB/P263/p263_picture_layer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o
 .PHONY : VLIB/P263/p263_picture_layer.c.o
 
 VLIB/P263/p263_picture_layer.i: VLIB/P263/p263_picture_layer.c.i
@@ -279,7 +279,7 @@ VLIB/P263/p263_picture_layer.i: VLIB/P263/p263_picture_layer.c.i
 
 # target to preprocess a source file
 VLIB/P263/p263_picture_layer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.i
 .PHONY : VLIB/P263/p263_picture_layer.c.i
 
 VLIB/P263/p263_picture_layer.s: VLIB/P263/p263_picture_layer.c.s
@@ -287,7 +287,7 @@ VLIB/P263/p263_picture_layer.s: VLIB/P263/p263_picture_layer.c.s
 
 # target to generate assembly for a file
 VLIB/P263/p263_picture_layer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.s
 .PHONY : VLIB/P263/p263_picture_layer.c.s
 
 VLIB/P264/p264.o: VLIB/P264/p264.c.o
@@ -295,7 +295,7 @@ VLIB/P264/p264.o: VLIB/P264/p264.c.o
 
 # target to build an object file
 VLIB/P264/p264.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o
 .PHONY : VLIB/P264/p264.c.o
 
 VLIB/P264/p264.i: VLIB/P264/p264.c.i
@@ -303,7 +303,7 @@ VLIB/P264/p264.i: VLIB/P264/p264.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.i
 .PHONY : VLIB/P264/p264.c.i
 
 VLIB/P264/p264.s: VLIB/P264/p264.c.s
@@ -311,7 +311,7 @@ VLIB/P264/p264.s: VLIB/P264/p264.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.s
 .PHONY : VLIB/P264/p264.c.s
 
 VLIB/P264/p264_Qp.o: VLIB/P264/p264_Qp.c.o
@@ -319,7 +319,7 @@ VLIB/P264/p264_Qp.o: VLIB/P264/p264_Qp.c.o
 
 # target to build an object file
 VLIB/P264/p264_Qp.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o
 .PHONY : VLIB/P264/p264_Qp.c.o
 
 VLIB/P264/p264_Qp.i: VLIB/P264/p264_Qp.c.i
@@ -327,7 +327,7 @@ VLIB/P264/p264_Qp.i: VLIB/P264/p264_Qp.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_Qp.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.i
 .PHONY : VLIB/P264/p264_Qp.c.i
 
 VLIB/P264/p264_Qp.s: VLIB/P264/p264_Qp.c.s
@@ -335,7 +335,7 @@ VLIB/P264/p264_Qp.s: VLIB/P264/p264_Qp.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_Qp.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.s
 .PHONY : VLIB/P264/p264_Qp.c.s
 
 VLIB/P264/p264_codec.o: VLIB/P264/p264_codec.c.o
@@ -343,7 +343,7 @@ VLIB/P264/p264_codec.o: VLIB/P264/p264_codec.c.o
 
 # target to build an object file
 VLIB/P264/p264_codec.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o
 .PHONY : VLIB/P264/p264_codec.c.o
 
 VLIB/P264/p264_codec.i: VLIB/P264/p264_codec.c.i
@@ -351,7 +351,7 @@ VLIB/P264/p264_codec.i: VLIB/P264/p264_codec.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_codec.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.i
 .PHONY : VLIB/P264/p264_codec.c.i
 
 VLIB/P264/p264_codec.s: VLIB/P264/p264_codec.c.s
@@ -359,7 +359,7 @@ VLIB/P264/p264_codec.s: VLIB/P264/p264_codec.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_codec.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.s
 .PHONY : VLIB/P264/p264_codec.c.s
 
 VLIB/P264/p264_gob_layer.o: VLIB/P264/p264_gob_layer.c.o
@@ -367,7 +367,7 @@ VLIB/P264/p264_gob_layer.o: VLIB/P264/p264_gob_layer.c.o
 
 # target to build an object file
 VLIB/P264/p264_gob_layer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o
 .PHONY : VLIB/P264/p264_gob_layer.c.o
 
 VLIB/P264/p264_gob_layer.i: VLIB/P264/p264_gob_layer.c.i
@@ -375,7 +375,7 @@ VLIB/P264/p264_gob_layer.i: VLIB/P264/p264_gob_layer.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_gob_layer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.i
 .PHONY : VLIB/P264/p264_gob_layer.c.i
 
 VLIB/P264/p264_gob_layer.s: VLIB/P264/p264_gob_layer.c.s
@@ -383,7 +383,7 @@ VLIB/P264/p264_gob_layer.s: VLIB/P264/p264_gob_layer.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_gob_layer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.s
 .PHONY : VLIB/P264/p264_gob_layer.c.s
 
 VLIB/P264/p264_inter_mc.o: VLIB/P264/p264_inter_mc.c.o
@@ -391,7 +391,7 @@ VLIB/P264/p264_inter_mc.o: VLIB/P264/p264_inter_mc.c.o
 
 # target to build an object file
 VLIB/P264/p264_inter_mc.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o
 .PHONY : VLIB/P264/p264_inter_mc.c.o
 
 VLIB/P264/p264_inter_mc.i: VLIB/P264/p264_inter_mc.c.i
@@ -399,7 +399,7 @@ VLIB/P264/p264_inter_mc.i: VLIB/P264/p264_inter_mc.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_inter_mc.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.i
 .PHONY : VLIB/P264/p264_inter_mc.c.i
 
 VLIB/P264/p264_inter_mc.s: VLIB/P264/p264_inter_mc.c.s
@@ -407,7 +407,7 @@ VLIB/P264/p264_inter_mc.s: VLIB/P264/p264_inter_mc.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_inter_mc.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.s
 .PHONY : VLIB/P264/p264_inter_mc.c.s
 
 VLIB/P264/p264_intra_pred.o: VLIB/P264/p264_intra_pred.c.o
@@ -415,7 +415,7 @@ VLIB/P264/p264_intra_pred.o: VLIB/P264/p264_intra_pred.c.o
 
 # target to build an object file
 VLIB/P264/p264_intra_pred.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o
 .PHONY : VLIB/P264/p264_intra_pred.c.o
 
 VLIB/P264/p264_intra_pred.i: VLIB/P264/p264_intra_pred.c.i
@@ -423,7 +423,7 @@ VLIB/P264/p264_intra_pred.i: VLIB/P264/p264_intra_pred.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_intra_pred.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.i
 .PHONY : VLIB/P264/p264_intra_pred.c.i
 
 VLIB/P264/p264_intra_pred.s: VLIB/P264/p264_intra_pred.c.s
@@ -431,7 +431,7 @@ VLIB/P264/p264_intra_pred.s: VLIB/P264/p264_intra_pred.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_intra_pred.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.s
 .PHONY : VLIB/P264/p264_intra_pred.c.s
 
 VLIB/P264/p264_mb_layer.o: VLIB/P264/p264_mb_layer.c.o
@@ -439,7 +439,7 @@ VLIB/P264/p264_mb_layer.o: VLIB/P264/p264_mb_layer.c.o
 
 # target to build an object file
 VLIB/P264/p264_mb_layer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o
 .PHONY : VLIB/P264/p264_mb_layer.c.o
 
 VLIB/P264/p264_mb_layer.i: VLIB/P264/p264_mb_layer.c.i
@@ -447,7 +447,7 @@ VLIB/P264/p264_mb_layer.i: VLIB/P264/p264_mb_layer.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_mb_layer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.i
 .PHONY : VLIB/P264/p264_mb_layer.c.i
 
 VLIB/P264/p264_mb_layer.s: VLIB/P264/p264_mb_layer.c.s
@@ -455,7 +455,7 @@ VLIB/P264/p264_mb_layer.s: VLIB/P264/p264_mb_layer.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_mb_layer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.s
 .PHONY : VLIB/P264/p264_mb_layer.c.s
 
 VLIB/P264/p264_merge.o: VLIB/P264/p264_merge.c.o
@@ -463,7 +463,7 @@ VLIB/P264/p264_merge.o: VLIB/P264/p264_merge.c.o
 
 # target to build an object file
 VLIB/P264/p264_merge.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o
 .PHONY : VLIB/P264/p264_merge.c.o
 
 VLIB/P264/p264_merge.i: VLIB/P264/p264_merge.c.i
@@ -471,7 +471,7 @@ VLIB/P264/p264_merge.i: VLIB/P264/p264_merge.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_merge.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.i
 .PHONY : VLIB/P264/p264_merge.c.i
 
 VLIB/P264/p264_merge.s: VLIB/P264/p264_merge.c.s
@@ -479,7 +479,7 @@ VLIB/P264/p264_merge.s: VLIB/P264/p264_merge.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_merge.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.s
 .PHONY : VLIB/P264/p264_merge.c.s
 
 VLIB/P264/p264_picture_layer.o: VLIB/P264/p264_picture_layer.c.o
@@ -487,7 +487,7 @@ VLIB/P264/p264_picture_layer.o: VLIB/P264/p264_picture_layer.c.o
 
 # target to build an object file
 VLIB/P264/p264_picture_layer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o
 .PHONY : VLIB/P264/p264_picture_layer.c.o
 
 VLIB/P264/p264_picture_layer.i: VLIB/P264/p264_picture_layer.c.i
@@ -495,7 +495,7 @@ VLIB/P264/p264_picture_layer.i: VLIB/P264/p264_picture_layer.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_picture_layer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.i
 .PHONY : VLIB/P264/p264_picture_layer.c.i
 
 VLIB/P264/p264_picture_layer.s: VLIB/P264/p264_picture_layer.c.s
@@ -503,7 +503,7 @@ VLIB/P264/p264_picture_layer.s: VLIB/P264/p264_picture_layer.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_picture_layer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.s
 .PHONY : VLIB/P264/p264_picture_layer.c.s
 
 VLIB/P264/p264_transform.o: VLIB/P264/p264_transform.c.o
@@ -511,7 +511,7 @@ VLIB/P264/p264_transform.o: VLIB/P264/p264_transform.c.o
 
 # target to build an object file
 VLIB/P264/p264_transform.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o
 .PHONY : VLIB/P264/p264_transform.c.o
 
 VLIB/P264/p264_transform.i: VLIB/P264/p264_transform.c.i
@@ -519,7 +519,7 @@ VLIB/P264/p264_transform.i: VLIB/P264/p264_transform.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_transform.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.i
 .PHONY : VLIB/P264/p264_transform.c.i
 
 VLIB/P264/p264_transform.s: VLIB/P264/p264_transform.c.s
@@ -527,7 +527,7 @@ VLIB/P264/p264_transform.s: VLIB/P264/p264_transform.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_transform.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.s
 .PHONY : VLIB/P264/p264_transform.c.s
 
 VLIB/P264/p264_zigzag.o: VLIB/P264/p264_zigzag.c.o
@@ -535,7 +535,7 @@ VLIB/P264/p264_zigzag.o: VLIB/P264/p264_zigzag.c.o
 
 # target to build an object file
 VLIB/P264/p264_zigzag.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o
 .PHONY : VLIB/P264/p264_zigzag.c.o
 
 VLIB/P264/p264_zigzag.i: VLIB/P264/p264_zigzag.c.i
@@ -543,7 +543,7 @@ VLIB/P264/p264_zigzag.i: VLIB/P264/p264_zigzag.c.i
 
 # target to preprocess a source file
 VLIB/P264/p264_zigzag.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.i
 .PHONY : VLIB/P264/p264_zigzag.c.i
 
 VLIB/P264/p264_zigzag.s: VLIB/P264/p264_zigzag.c.s
@@ -551,7 +551,7 @@ VLIB/P264/p264_zigzag.s: VLIB/P264/p264_zigzag.c.s
 
 # target to generate assembly for a file
 VLIB/P264/p264_zigzag.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.s
 .PHONY : VLIB/P264/p264_zigzag.c.s
 
 VLIB/P264/video_p264.o: VLIB/P264/video_p264.c.o
@@ -559,7 +559,7 @@ VLIB/P264/video_p264.o: VLIB/P264/video_p264.c.o
 
 # target to build an object file
 VLIB/P264/video_p264.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o
 .PHONY : VLIB/P264/video_p264.c.o
 
 VLIB/P264/video_p264.i: VLIB/P264/video_p264.c.i
@@ -567,7 +567,7 @@ VLIB/P264/video_p264.i: VLIB/P264/video_p264.c.i
 
 # target to preprocess a source file
 VLIB/P264/video_p264.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.i
 .PHONY : VLIB/P264/video_p264.c.i
 
 VLIB/P264/video_p264.s: VLIB/P264/video_p264.c.s
@@ -575,7 +575,7 @@ VLIB/P264/video_p264.s: VLIB/P264/video_p264.c.s
 
 # target to generate assembly for a file
 VLIB/P264/video_p264.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.s
 .PHONY : VLIB/P264/video_p264.c.s
 
 VLIB/Platform/x86/UVLC/uvlc_codec.o: VLIB/Platform/x86/UVLC/uvlc_codec.c.o
@@ -583,7 +583,7 @@ VLIB/Platform/x86/UVLC/uvlc_codec.o: VLIB/Platform/x86/UVLC/uvlc_codec.c.o
 
 # target to build an object file
 VLIB/Platform/x86/UVLC/uvlc_codec.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o
 .PHONY : VLIB/Platform/x86/UVLC/uvlc_codec.c.o
 
 VLIB/Platform/x86/UVLC/uvlc_codec.i: VLIB/Platform/x86/UVLC/uvlc_codec.c.i
@@ -591,7 +591,7 @@ VLIB/Platform/x86/UVLC/uvlc_codec.i: VLIB/Platform/x86/UVLC/uvlc_codec.c.i
 
 # target to preprocess a source file
 VLIB/Platform/x86/UVLC/uvlc_codec.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.i
 .PHONY : VLIB/Platform/x86/UVLC/uvlc_codec.c.i
 
 VLIB/Platform/x86/UVLC/uvlc_codec.s: VLIB/Platform/x86/UVLC/uvlc_codec.c.s
@@ -599,7 +599,7 @@ VLIB/Platform/x86/UVLC/uvlc_codec.s: VLIB/Platform/x86/UVLC/uvlc_codec.c.s
 
 # target to generate assembly for a file
 VLIB/Platform/x86/UVLC/uvlc_codec.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.s
 .PHONY : VLIB/Platform/x86/UVLC/uvlc_codec.c.s
 
 VLIB/Platform/x86/video_utils.o: VLIB/Platform/x86/video_utils.c.o
@@ -607,7 +607,7 @@ VLIB/Platform/x86/video_utils.o: VLIB/Platform/x86/video_utils.c.o
 
 # target to build an object file
 VLIB/Platform/x86/video_utils.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o
 .PHONY : VLIB/Platform/x86/video_utils.c.o
 
 VLIB/Platform/x86/video_utils.i: VLIB/Platform/x86/video_utils.c.i
@@ -615,7 +615,7 @@ VLIB/Platform/x86/video_utils.i: VLIB/Platform/x86/video_utils.c.i
 
 # target to preprocess a source file
 VLIB/Platform/x86/video_utils.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.i
 .PHONY : VLIB/Platform/x86/video_utils.c.i
 
 VLIB/Platform/x86/video_utils.s: VLIB/Platform/x86/video_utils.c.s
@@ -623,7 +623,7 @@ VLIB/Platform/x86/video_utils.s: VLIB/Platform/x86/video_utils.c.s
 
 # target to generate assembly for a file
 VLIB/Platform/x86/video_utils.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.s
 .PHONY : VLIB/Platform/x86/video_utils.c.s
 
 VLIB/UVLC/uvlc.o: VLIB/UVLC/uvlc.c.o
@@ -631,7 +631,7 @@ VLIB/UVLC/uvlc.o: VLIB/UVLC/uvlc.c.o
 
 # target to build an object file
 VLIB/UVLC/uvlc.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o
 .PHONY : VLIB/UVLC/uvlc.c.o
 
 VLIB/UVLC/uvlc.i: VLIB/UVLC/uvlc.c.i
@@ -639,7 +639,7 @@ VLIB/UVLC/uvlc.i: VLIB/UVLC/uvlc.c.i
 
 # target to preprocess a source file
 VLIB/UVLC/uvlc.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.i
 .PHONY : VLIB/UVLC/uvlc.c.i
 
 VLIB/UVLC/uvlc.s: VLIB/UVLC/uvlc.c.s
@@ -647,7 +647,7 @@ VLIB/UVLC/uvlc.s: VLIB/UVLC/uvlc.c.s
 
 # target to generate assembly for a file
 VLIB/UVLC/uvlc.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.s
 .PHONY : VLIB/UVLC/uvlc.c.s
 
 VLIB/UVLC/uvlc_codec.o: VLIB/UVLC/uvlc_codec.c.o
@@ -655,7 +655,7 @@ VLIB/UVLC/uvlc_codec.o: VLIB/UVLC/uvlc_codec.c.o
 
 # target to build an object file
 VLIB/UVLC/uvlc_codec.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o
 .PHONY : VLIB/UVLC/uvlc_codec.c.o
 
 VLIB/UVLC/uvlc_codec.i: VLIB/UVLC/uvlc_codec.c.i
@@ -663,7 +663,7 @@ VLIB/UVLC/uvlc_codec.i: VLIB/UVLC/uvlc_codec.c.i
 
 # target to preprocess a source file
 VLIB/UVLC/uvlc_codec.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.i
 .PHONY : VLIB/UVLC/uvlc_codec.c.i
 
 VLIB/UVLC/uvlc_codec.s: VLIB/UVLC/uvlc_codec.c.s
@@ -671,7 +671,7 @@ VLIB/UVLC/uvlc_codec.s: VLIB/UVLC/uvlc_codec.c.s
 
 # target to generate assembly for a file
 VLIB/UVLC/uvlc_codec.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.s
 .PHONY : VLIB/UVLC/uvlc_codec.c.s
 
 VLIB/UVLC/uvlc_gob_layer.o: VLIB/UVLC/uvlc_gob_layer.c.o
@@ -679,7 +679,7 @@ VLIB/UVLC/uvlc_gob_layer.o: VLIB/UVLC/uvlc_gob_layer.c.o
 
 # target to build an object file
 VLIB/UVLC/uvlc_gob_layer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o
 .PHONY : VLIB/UVLC/uvlc_gob_layer.c.o
 
 VLIB/UVLC/uvlc_gob_layer.i: VLIB/UVLC/uvlc_gob_layer.c.i
@@ -687,7 +687,7 @@ VLIB/UVLC/uvlc_gob_layer.i: VLIB/UVLC/uvlc_gob_layer.c.i
 
 # target to preprocess a source file
 VLIB/UVLC/uvlc_gob_layer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.i
 .PHONY : VLIB/UVLC/uvlc_gob_layer.c.i
 
 VLIB/UVLC/uvlc_gob_layer.s: VLIB/UVLC/uvlc_gob_layer.c.s
@@ -695,7 +695,7 @@ VLIB/UVLC/uvlc_gob_layer.s: VLIB/UVLC/uvlc_gob_layer.c.s
 
 # target to generate assembly for a file
 VLIB/UVLC/uvlc_gob_layer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.s
 .PHONY : VLIB/UVLC/uvlc_gob_layer.c.s
 
 VLIB/UVLC/uvlc_mb_layer.o: VLIB/UVLC/uvlc_mb_layer.c.o
@@ -703,7 +703,7 @@ VLIB/UVLC/uvlc_mb_layer.o: VLIB/UVLC/uvlc_mb_layer.c.o
 
 # target to build an object file
 VLIB/UVLC/uvlc_mb_layer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o
 .PHONY : VLIB/UVLC/uvlc_mb_layer.c.o
 
 VLIB/UVLC/uvlc_mb_layer.i: VLIB/UVLC/uvlc_mb_layer.c.i
@@ -711,7 +711,7 @@ VLIB/UVLC/uvlc_mb_layer.i: VLIB/UVLC/uvlc_mb_layer.c.i
 
 # target to preprocess a source file
 VLIB/UVLC/uvlc_mb_layer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.i
 .PHONY : VLIB/UVLC/uvlc_mb_layer.c.i
 
 VLIB/UVLC/uvlc_mb_layer.s: VLIB/UVLC/uvlc_mb_layer.c.s
@@ -719,7 +719,7 @@ VLIB/UVLC/uvlc_mb_layer.s: VLIB/UVLC/uvlc_mb_layer.c.s
 
 # target to generate assembly for a file
 VLIB/UVLC/uvlc_mb_layer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.s
 .PHONY : VLIB/UVLC/uvlc_mb_layer.c.s
 
 VLIB/UVLC/uvlc_picture_layer.o: VLIB/UVLC/uvlc_picture_layer.c.o
@@ -727,7 +727,7 @@ VLIB/UVLC/uvlc_picture_layer.o: VLIB/UVLC/uvlc_picture_layer.c.o
 
 # target to build an object file
 VLIB/UVLC/uvlc_picture_layer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o
 .PHONY : VLIB/UVLC/uvlc_picture_layer.c.o
 
 VLIB/UVLC/uvlc_picture_layer.i: VLIB/UVLC/uvlc_picture_layer.c.i
@@ -735,7 +735,7 @@ VLIB/UVLC/uvlc_picture_layer.i: VLIB/UVLC/uvlc_picture_layer.c.i
 
 # target to preprocess a source file
 VLIB/UVLC/uvlc_picture_layer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.i
 .PHONY : VLIB/UVLC/uvlc_picture_layer.c.i
 
 VLIB/UVLC/uvlc_picture_layer.s: VLIB/UVLC/uvlc_picture_layer.c.s
@@ -743,7 +743,7 @@ VLIB/UVLC/uvlc_picture_layer.s: VLIB/UVLC/uvlc_picture_layer.c.s
 
 # target to generate assembly for a file
 VLIB/UVLC/uvlc_picture_layer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.s
 .PHONY : VLIB/UVLC/uvlc_picture_layer.c.s
 
 VLIB/video_codec.o: VLIB/video_codec.c.o
@@ -751,7 +751,7 @@ VLIB/video_codec.o: VLIB/video_codec.c.o
 
 # target to build an object file
 VLIB/video_codec.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o
 .PHONY : VLIB/video_codec.c.o
 
 VLIB/video_codec.i: VLIB/video_codec.c.i
@@ -759,7 +759,7 @@ VLIB/video_codec.i: VLIB/video_codec.c.i
 
 # target to preprocess a source file
 VLIB/video_codec.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.i
 .PHONY : VLIB/video_codec.c.i
 
 VLIB/video_codec.s: VLIB/video_codec.c.s
@@ -767,7 +767,7 @@ VLIB/video_codec.s: VLIB/video_codec.c.s
 
 # target to generate assembly for a file
 VLIB/video_codec.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.s
 .PHONY : VLIB/video_codec.c.s
 
 VLIB/video_controller.o: VLIB/video_controller.c.o
@@ -775,7 +775,7 @@ VLIB/video_controller.o: VLIB/video_controller.c.o
 
 # target to build an object file
 VLIB/video_controller.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o
 .PHONY : VLIB/video_controller.c.o
 
 VLIB/video_controller.i: VLIB/video_controller.c.i
@@ -783,7 +783,7 @@ VLIB/video_controller.i: VLIB/video_controller.c.i
 
 # target to preprocess a source file
 VLIB/video_controller.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.i
 .PHONY : VLIB/video_controller.c.i
 
 VLIB/video_controller.s: VLIB/video_controller.c.s
@@ -791,7 +791,7 @@ VLIB/video_controller.s: VLIB/video_controller.c.s
 
 # target to generate assembly for a file
 VLIB/video_controller.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.s
 .PHONY : VLIB/video_controller.c.s
 
 VLIB/video_dct.o: VLIB/video_dct.c.o
@@ -799,7 +799,7 @@ VLIB/video_dct.o: VLIB/video_dct.c.o
 
 # target to build an object file
 VLIB/video_dct.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o
 .PHONY : VLIB/video_dct.c.o
 
 VLIB/video_dct.i: VLIB/video_dct.c.i
@@ -807,7 +807,7 @@ VLIB/video_dct.i: VLIB/video_dct.c.i
 
 # target to preprocess a source file
 VLIB/video_dct.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.i
 .PHONY : VLIB/video_dct.c.i
 
 VLIB/video_dct.s: VLIB/video_dct.c.s
@@ -815,7 +815,7 @@ VLIB/video_dct.s: VLIB/video_dct.c.s
 
 # target to generate assembly for a file
 VLIB/video_dct.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.s
 .PHONY : VLIB/video_dct.c.s
 
 VLIB/video_huffman.o: VLIB/video_huffman.c.o
@@ -823,7 +823,7 @@ VLIB/video_huffman.o: VLIB/video_huffman.c.o
 
 # target to build an object file
 VLIB/video_huffman.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o
 .PHONY : VLIB/video_huffman.c.o
 
 VLIB/video_huffman.i: VLIB/video_huffman.c.i
@@ -831,7 +831,7 @@ VLIB/video_huffman.i: VLIB/video_huffman.c.i
 
 # target to preprocess a source file
 VLIB/video_huffman.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.i
 .PHONY : VLIB/video_huffman.c.i
 
 VLIB/video_huffman.s: VLIB/video_huffman.c.s
@@ -839,7 +839,7 @@ VLIB/video_huffman.s: VLIB/video_huffman.c.s
 
 # target to generate assembly for a file
 VLIB/video_huffman.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.s
 .PHONY : VLIB/video_huffman.c.s
 
 VLIB/video_macroblock.o: VLIB/video_macroblock.c.o
@@ -847,7 +847,7 @@ VLIB/video_macroblock.o: VLIB/video_macroblock.c.o
 
 # target to build an object file
 VLIB/video_macroblock.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o
 .PHONY : VLIB/video_macroblock.c.o
 
 VLIB/video_macroblock.i: VLIB/video_macroblock.c.i
@@ -855,7 +855,7 @@ VLIB/video_macroblock.i: VLIB/video_macroblock.c.i
 
 # target to preprocess a source file
 VLIB/video_macroblock.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.i
 .PHONY : VLIB/video_macroblock.c.i
 
 VLIB/video_macroblock.s: VLIB/video_macroblock.c.s
@@ -863,7 +863,7 @@ VLIB/video_macroblock.s: VLIB/video_macroblock.c.s
 
 # target to generate assembly for a file
 VLIB/video_macroblock.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.s
 .PHONY : VLIB/video_macroblock.c.s
 
 VLIB/video_mem32.o: VLIB/video_mem32.c.o
@@ -871,7 +871,7 @@ VLIB/video_mem32.o: VLIB/video_mem32.c.o
 
 # target to build an object file
 VLIB/video_mem32.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o
 .PHONY : VLIB/video_mem32.c.o
 
 VLIB/video_mem32.i: VLIB/video_mem32.c.i
@@ -879,7 +879,7 @@ VLIB/video_mem32.i: VLIB/video_mem32.c.i
 
 # target to preprocess a source file
 VLIB/video_mem32.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.i
 .PHONY : VLIB/video_mem32.c.i
 
 VLIB/video_mem32.s: VLIB/video_mem32.c.s
@@ -887,7 +887,7 @@ VLIB/video_mem32.s: VLIB/video_mem32.c.s
 
 # target to generate assembly for a file
 VLIB/video_mem32.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.s
 .PHONY : VLIB/video_mem32.c.s
 
 VLIB/video_packetizer.o: VLIB/video_packetizer.c.o
@@ -895,7 +895,7 @@ VLIB/video_packetizer.o: VLIB/video_packetizer.c.o
 
 # target to build an object file
 VLIB/video_packetizer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o
 .PHONY : VLIB/video_packetizer.c.o
 
 VLIB/video_packetizer.i: VLIB/video_packetizer.c.i
@@ -903,7 +903,7 @@ VLIB/video_packetizer.i: VLIB/video_packetizer.c.i
 
 # target to preprocess a source file
 VLIB/video_packetizer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.i
 .PHONY : VLIB/video_packetizer.c.i
 
 VLIB/video_packetizer.s: VLIB/video_packetizer.c.s
@@ -911,7 +911,7 @@ VLIB/video_packetizer.s: VLIB/video_packetizer.c.s
 
 # target to generate assembly for a file
 VLIB/video_packetizer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.s
 .PHONY : VLIB/video_packetizer.c.s
 
 VLIB/video_picture.o: VLIB/video_picture.c.o
@@ -919,7 +919,7 @@ VLIB/video_picture.o: VLIB/video_picture.c.o
 
 # target to build an object file
 VLIB/video_picture.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o
 .PHONY : VLIB/video_picture.c.o
 
 VLIB/video_picture.i: VLIB/video_picture.c.i
@@ -927,7 +927,7 @@ VLIB/video_picture.i: VLIB/video_picture.c.i
 
 # target to preprocess a source file
 VLIB/video_picture.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.i
 .PHONY : VLIB/video_picture.c.i
 
 VLIB/video_picture.s: VLIB/video_picture.c.s
@@ -935,7 +935,7 @@ VLIB/video_picture.s: VLIB/video_picture.c.s
 
 # target to generate assembly for a file
 VLIB/video_picture.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.s
 .PHONY : VLIB/video_picture.c.s
 
 VLIB/video_quantizer.o: VLIB/video_quantizer.c.o
@@ -943,7 +943,7 @@ VLIB/video_quantizer.o: VLIB/video_quantizer.c.o
 
 # target to build an object file
 VLIB/video_quantizer.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o
 .PHONY : VLIB/video_quantizer.c.o
 
 VLIB/video_quantizer.i: VLIB/video_quantizer.c.i
@@ -951,7 +951,7 @@ VLIB/video_quantizer.i: VLIB/video_quantizer.c.i
 
 # target to preprocess a source file
 VLIB/video_quantizer.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.i
 .PHONY : VLIB/video_quantizer.c.i
 
 VLIB/video_quantizer.s: VLIB/video_quantizer.c.s
@@ -959,7 +959,7 @@ VLIB/video_quantizer.s: VLIB/video_quantizer.c.s
 
 # target to generate assembly for a file
 VLIB/video_quantizer.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.s
 .PHONY : VLIB/video_quantizer.c.s
 
 VP_Api/vp_api_error.o: VP_Api/vp_api_error.c.o
@@ -967,7 +967,7 @@ VP_Api/vp_api_error.o: VP_Api/vp_api_error.c.o
 
 # target to build an object file
 VP_Api/vp_api_error.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o
 .PHONY : VP_Api/vp_api_error.c.o
 
 VP_Api/vp_api_error.i: VP_Api/vp_api_error.c.i
@@ -975,7 +975,7 @@ VP_Api/vp_api_error.i: VP_Api/vp_api_error.c.i
 
 # target to preprocess a source file
 VP_Api/vp_api_error.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.i
 .PHONY : VP_Api/vp_api_error.c.i
 
 VP_Api/vp_api_error.s: VP_Api/vp_api_error.c.s
@@ -983,7 +983,7 @@ VP_Api/vp_api_error.s: VP_Api/vp_api_error.c.s
 
 # target to generate assembly for a file
 VP_Api/vp_api_error.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.s
 .PHONY : VP_Api/vp_api_error.c.s
 
 VP_Api/vp_api_io_multi_stage.o: VP_Api/vp_api_io_multi_stage.c.o
@@ -991,7 +991,7 @@ VP_Api/vp_api_io_multi_stage.o: VP_Api/vp_api_io_multi_stage.c.o
 
 # target to build an object file
 VP_Api/vp_api_io_multi_stage.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o
 .PHONY : VP_Api/vp_api_io_multi_stage.c.o
 
 VP_Api/vp_api_io_multi_stage.i: VP_Api/vp_api_io_multi_stage.c.i
@@ -999,7 +999,7 @@ VP_Api/vp_api_io_multi_stage.i: VP_Api/vp_api_io_multi_stage.c.i
 
 # target to preprocess a source file
 VP_Api/vp_api_io_multi_stage.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.i
 .PHONY : VP_Api/vp_api_io_multi_stage.c.i
 
 VP_Api/vp_api_io_multi_stage.s: VP_Api/vp_api_io_multi_stage.c.s
@@ -1007,7 +1007,7 @@ VP_Api/vp_api_io_multi_stage.s: VP_Api/vp_api_io_multi_stage.c.s
 
 # target to generate assembly for a file
 VP_Api/vp_api_io_multi_stage.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.s
 .PHONY : VP_Api/vp_api_io_multi_stage.c.s
 
 VP_Os/vp_os_error_handling.o: VP_Os/vp_os_error_handling.c.o
@@ -1015,7 +1015,7 @@ VP_Os/vp_os_error_handling.o: VP_Os/vp_os_error_handling.c.o
 
 # target to build an object file
 VP_Os/vp_os_error_handling.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o
 .PHONY : VP_Os/vp_os_error_handling.c.o
 
 VP_Os/vp_os_error_handling.i: VP_Os/vp_os_error_handling.c.i
@@ -1023,7 +1023,7 @@ VP_Os/vp_os_error_handling.i: VP_Os/vp_os_error_handling.c.i
 
 # target to preprocess a source file
 VP_Os/vp_os_error_handling.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.i
 .PHONY : VP_Os/vp_os_error_handling.c.i
 
 VP_Os/vp_os_error_handling.s: VP_Os/vp_os_error_handling.c.s
@@ -1031,7 +1031,7 @@ VP_Os/vp_os_error_handling.s: VP_Os/vp_os_error_handling.c.s
 
 # target to generate assembly for a file
 VP_Os/vp_os_error_handling.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.s
 .PHONY : VP_Os/vp_os_error_handling.c.s
 
 VP_Os/vp_os_malloc.o: VP_Os/vp_os_malloc.c.o
@@ -1039,7 +1039,7 @@ VP_Os/vp_os_malloc.o: VP_Os/vp_os_malloc.c.o
 
 # target to build an object file
 VP_Os/vp_os_malloc.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o
 .PHONY : VP_Os/vp_os_malloc.c.o
 
 VP_Os/vp_os_malloc.i: VP_Os/vp_os_malloc.c.i
@@ -1047,7 +1047,7 @@ VP_Os/vp_os_malloc.i: VP_Os/vp_os_malloc.c.i
 
 # target to preprocess a source file
 VP_Os/vp_os_malloc.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.i
 .PHONY : VP_Os/vp_os_malloc.c.i
 
 VP_Os/vp_os_malloc.s: VP_Os/vp_os_malloc.c.s
@@ -1055,7 +1055,7 @@ VP_Os/vp_os_malloc.s: VP_Os/vp_os_malloc.c.s
 
 # target to generate assembly for a file
 VP_Os/vp_os_malloc.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.s
 .PHONY : VP_Os/vp_os_malloc.c.s
 
 libp264.o: libp264.c.o
@@ -1063,7 +1063,7 @@ libp264.o: libp264.c.o
 
 # target to build an object file
 libp264.c.o:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/libp264.c.o
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/libp264.c.o
 .PHONY : libp264.c.o
 
 libp264.i: libp264.c.i
@@ -1071,7 +1071,7 @@ libp264.i: libp264.c.i
 
 # target to preprocess a source file
 libp264.c.i:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/libp264.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/libp264.c.i
 .PHONY : libp264.c.i
 
 libp264.s: libp264.c.s
@@ -1079,7 +1079,7 @@ libp264.s: libp264.c.s
 
 # target to generate assembly for a file
 libp264.c.s:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/libp264.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f libp264/CMakeFiles/p264.dir/build.make libp264/CMakeFiles/p264.dir/libp264.c.s
 .PHONY : libp264.c.s
 
 # Help Target
@@ -1222,6 +1222,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

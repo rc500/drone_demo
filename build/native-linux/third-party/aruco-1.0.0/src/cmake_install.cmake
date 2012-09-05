@@ -1,8 +1,8 @@
-# Install script for directory: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src
+# Install script for directory: /home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native")
+  SET(CMAKE_INSTALL_PREFIX "/home/rujian/fuerte_workspace/drone_demo/ardrone/native")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -42,13 +42,13 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "main")
        NOT IS_SYMLINK "${file}")
       FILE(RPATH_CHECK
            FILE "${file}"
-           RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+           RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
     ENDIF()
   ENDFOREACH()
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src/libaruco.so.1.0.0"
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src/libaruco.so.1.0"
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src/libaruco.so"
+    "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src/libaruco.so.1.0.0"
+    "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src/libaruco.so.1.0"
+    "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src/libaruco.so"
     )
   FOREACH(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libaruco.so.1.0.0"
@@ -59,8 +59,8 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "main")
        NOT IS_SYMLINK "${file}")
       FILE(RPATH_CHANGE
            FILE "${file}"
-           OLD_RPATH "/opt/ros/fuerte/lib:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
-           NEW_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+           OLD_RPATH "/opt/ros/fuerte/lib::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
+           NEW_RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
       IF(CMAKE_INSTALL_DO_STRIP)
         EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "${file}")
       ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -70,13 +70,13 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "main
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "main")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/aruco" TYPE FILE FILES
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/board.h"
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cvdrawingutils.h"
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/boarddetector.h"
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/marker.h"
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/markerdetector.h"
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/aruco.h"
-    "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h"
+    "/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h"
+    "/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cvdrawingutils.h"
+    "/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/aruco.h"
+    "/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/markerdetector.h"
+    "/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/boarddetector.h"
+    "/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/board.h"
+    "/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/marker.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "main")
 

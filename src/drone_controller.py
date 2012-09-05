@@ -34,6 +34,8 @@ class demo_controller:
 		self.trackmid = -1
 		self.misslimit = 3
 		self.misstracktimes = self.misslimit
+		self.noframelimit = 6
+		self.noframetimes = self.noframelimit
 		
 		self.twist = Twist()
 		self.cmdpub = rospy.Publisher('cmd_vel', Twist)
@@ -44,7 +46,7 @@ class demo_controller:
 		self.camselectpub = rospy.Publisher('/ardrone/camselect', UInt8)
 		self.hoverpub = rospy.Publisher('/ardrone/hover', Empty)
 		
-		self.ref = {'al':1100}
+		self.ref = {'al':1200}
 		self.error = {'al':[]}
 	
 	def nd_logger(self,msg):
@@ -67,8 +69,8 @@ class demo_controller:
 		sleep(1)	#nb: sleep 0.3 is min necessary wait before you can publish. perhaps bc ros master takes time to setup publisher.
 		self.camselectpub.publish(1);	print 'published camselect = downward facing cam'
 		self.icp = image_conv_processor(self)
-		#self.takeoffpub.publish(Empty())
-		#sleep(5); print '4'; sleep(1); print '3'; sleep(1); print '2'; sleep(1); print '1'; sleep(1)
+		self.takeoffpub.publish(Empty())
+		sleep(5); print '4'; sleep(1); print '3'; sleep(1); print '2'; sleep(1); print '1'; sleep(1)
 		rospy.Timer(rospy.Duration(1.0/40), self.main_timer_callback)
 	
 	def main_timer_callback(self,event):
@@ -87,7 +89,7 @@ class demo_controller:
 				if self.trackmid not in self.mks_log['mids'][-1] and self.misstracktimes<self.misslimit:
 					self.misstracktimes = self.misstracktimes + 1
 					self.twist.linear.x = 0; self.twist.linear.y = 0
-				elif self.trackmid not in self.mks_log['mids'][-1] and self.misstracktimes==self.misslimit:
+				elif self.trackmid not in self.mks_log['mids'][-1] and self.misstracktimes>=self.misslimit:
 					self.trackmid = self.mks_log['mids'][-1][0]
 					self.misstracktimes = 0
 				else:
@@ -98,10 +100,10 @@ class demo_controller:
 					alt = self.nd_log['al'][-1]
 					errinmmx = errinpx[0]*alt*0.005149; errinmmy = errinpx[1]*alt*0.004702
 					#print (errinmmx, errinmmy)
-					self.twist.linear.x = max(min(errinmmx/1000.0, 0.1), -0.1)
-					self.twist.linear.y = max(min(errinmmy/1000.0, 0.1), -0.1)
-
-			else:
+					self.twist.linear.x = max(min(errinmmx/2500.0, 0.15), -0.15)
+					self.twist.linear.y = max(min(errinmmy/2500.0, 0.15), -0.15)
+			
+			else:	#last mks_log entry is empty
 				if self.misstracktimes<self.misslimit:
 					self.misstracktimes = self.misstracktimes + 1
 					self.twist.linear.x = 0; self.twist.linear.y = 0
@@ -109,20 +111,27 @@ class demo_controller:
 					self.misstracktimes = self.misslimit
 					self.trackmid = -1
 					self.hoverpub.publish(Empty())
-					print 'hover'
+					print 'hover - miss track of markers'
 			
 			#self.cmdpub.publish(self.twist)
 			#self.cmd_logger(self.twist)		
 			self.lastmksseq = self.mksseq
-		else:
-			pass
+			self.noframetimes = 0
+			#endif there is a new frame
+			
+		else:	#there is not a new frame
+			if self.noframetimes < self.noframelimit:
+				self.noframetimes = self.noframetimes + 1
+			else:
+				self.hoverpub.publish(Empty())
+				print 'hover - continuously no new frames!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
 			#self.twist.linear.x = 0; self.twist.linear.y = 0
 			#print '------------------ No New Marker Data -------------------'
 		
 		self.cmdpub.publish(self.twist)
 		self.cmd_logger(self.twist)
 		print 'twist: \n', self.twist.linear
-		#print 'trackmid: ', self.trackmid
+		print 'trackmid: ', self.trackmid
 
 			
 				

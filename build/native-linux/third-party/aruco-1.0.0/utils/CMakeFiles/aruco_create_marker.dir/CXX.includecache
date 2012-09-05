@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/aruco.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/aruco.h
 markerdetector.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/markerdetector.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/markerdetector.h
 boarddetector.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/boarddetector.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/boarddetector.h
 cvdrawingutils.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cvdrawingutils.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cvdrawingutils.h
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/board.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/board.h
 opencv/cv.h
 -
 string
@@ -22,27 +22,27 @@ string
 vector
 -
 marker.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/boarddetector.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/boarddetector.h
 opencv/cv.h
 -
 board.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/board.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/board.h
 cameraparameters.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
 opencv/cv.h
 -
 string
 -
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cvdrawingutils.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cvdrawingutils.h
 aruco.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/aruco.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/aruco.h
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
 vector
 -
 iostream
@@ -50,9 +50,9 @@ iostream
 opencv/cv.h
 -
 cameraparameters.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/markerdetector.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/markerdetector.h
 opencv/cv.h
 -
 opencv/highgui.h
@@ -62,15 +62,15 @@ cstdio
 iostream
 -
 cameraparameters.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/cameraparameters.h
 marker.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/src/marker.h
 
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_create_marker.cpp
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_create_marker.cpp
 opencv2/opencv.hpp
 -
 aruco.h
-/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils/aruco.h
+/home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils/aruco.h
 iostream
 -
 

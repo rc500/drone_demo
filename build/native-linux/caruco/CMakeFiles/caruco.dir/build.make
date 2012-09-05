@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native
+CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/drone_demo/native
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux
+CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/drone_demo/build/native-linux
 
 # Include any dependencies generated for this target.
 include caruco/CMakeFiles/caruco.dir/depend.make
@@ -47,18 +47,18 @@ include caruco/CMakeFiles/caruco.dir/progress.make
 include caruco/CMakeFiles/caruco.dir/flags.make
 
 caruco/CMakeFiles/caruco.dir/error_handling.cpp.o: caruco/CMakeFiles/caruco.dir/flags.make
-caruco/CMakeFiles/caruco.dir/error_handling.cpp.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/error_handling.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_1)
+caruco/CMakeFiles/caruco.dir/error_handling.cpp.o: /home/rujian/fuerte_workspace/drone_demo/native/caruco/error_handling.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object caruco/CMakeFiles/caruco.dir/error_handling.cpp.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/error_handling.cpp.o -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/error_handling.cpp
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/error_handling.cpp.o -c /home/rujian/fuerte_workspace/drone_demo/native/caruco/error_handling.cpp
 
 caruco/CMakeFiles/caruco.dir/error_handling.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caruco.dir/error_handling.cpp.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/error_handling.cpp > CMakeFiles/caruco.dir/error_handling.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/caruco/error_handling.cpp > CMakeFiles/caruco.dir/error_handling.cpp.i
 
 caruco/CMakeFiles/caruco.dir/error_handling.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caruco.dir/error_handling.cpp.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/error_handling.cpp -o CMakeFiles/caruco.dir/error_handling.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/caruco/error_handling.cpp -o CMakeFiles/caruco.dir/error_handling.cpp.s
 
 caruco/CMakeFiles/caruco.dir/error_handling.cpp.o.requires:
 .PHONY : caruco/CMakeFiles/caruco.dir/error_handling.cpp.o.requires
@@ -70,18 +70,18 @@ caruco/CMakeFiles/caruco.dir/error_handling.cpp.o.provides: caruco/CMakeFiles/ca
 caruco/CMakeFiles/caruco.dir/error_handling.cpp.o.provides.build: caruco/CMakeFiles/caruco.dir/error_handling.cpp.o
 
 caruco/CMakeFiles/caruco.dir/board.cpp.o: caruco/CMakeFiles/caruco.dir/flags.make
-caruco/CMakeFiles/caruco.dir/board.cpp.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_2)
+caruco/CMakeFiles/caruco.dir/board.cpp.o: /home/rujian/fuerte_workspace/drone_demo/native/caruco/board.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object caruco/CMakeFiles/caruco.dir/board.cpp.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/board.cpp.o -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board.cpp
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/board.cpp.o -c /home/rujian/fuerte_workspace/drone_demo/native/caruco/board.cpp
 
 caruco/CMakeFiles/caruco.dir/board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caruco.dir/board.cpp.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board.cpp > CMakeFiles/caruco.dir/board.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/caruco/board.cpp > CMakeFiles/caruco.dir/board.cpp.i
 
 caruco/CMakeFiles/caruco.dir/board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caruco.dir/board.cpp.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board.cpp -o CMakeFiles/caruco.dir/board.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/caruco/board.cpp -o CMakeFiles/caruco.dir/board.cpp.s
 
 caruco/CMakeFiles/caruco.dir/board.cpp.o.requires:
 .PHONY : caruco/CMakeFiles/caruco.dir/board.cpp.o.requires
@@ -93,18 +93,18 @@ caruco/CMakeFiles/caruco.dir/board.cpp.o.provides: caruco/CMakeFiles/caruco.dir/
 caruco/CMakeFiles/caruco.dir/board.cpp.o.provides.build: caruco/CMakeFiles/caruco.dir/board.cpp.o
 
 caruco/CMakeFiles/caruco.dir/board_configuration.cpp.o: caruco/CMakeFiles/caruco.dir/flags.make
-caruco/CMakeFiles/caruco.dir/board_configuration.cpp.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board_configuration.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_3)
+caruco/CMakeFiles/caruco.dir/board_configuration.cpp.o: /home/rujian/fuerte_workspace/drone_demo/native/caruco/board_configuration.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object caruco/CMakeFiles/caruco.dir/board_configuration.cpp.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/board_configuration.cpp.o -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board_configuration.cpp
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/board_configuration.cpp.o -c /home/rujian/fuerte_workspace/drone_demo/native/caruco/board_configuration.cpp
 
 caruco/CMakeFiles/caruco.dir/board_configuration.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caruco.dir/board_configuration.cpp.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board_configuration.cpp > CMakeFiles/caruco.dir/board_configuration.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/caruco/board_configuration.cpp > CMakeFiles/caruco.dir/board_configuration.cpp.i
 
 caruco/CMakeFiles/caruco.dir/board_configuration.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caruco.dir/board_configuration.cpp.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board_configuration.cpp -o CMakeFiles/caruco.dir/board_configuration.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/caruco/board_configuration.cpp -o CMakeFiles/caruco.dir/board_configuration.cpp.s
 
 caruco/CMakeFiles/caruco.dir/board_configuration.cpp.o.requires:
 .PHONY : caruco/CMakeFiles/caruco.dir/board_configuration.cpp.o.requires
@@ -116,18 +116,18 @@ caruco/CMakeFiles/caruco.dir/board_configuration.cpp.o.provides: caruco/CMakeFil
 caruco/CMakeFiles/caruco.dir/board_configuration.cpp.o.provides.build: caruco/CMakeFiles/caruco.dir/board_configuration.cpp.o
 
 caruco/CMakeFiles/caruco.dir/board_detector.cpp.o: caruco/CMakeFiles/caruco.dir/flags.make
-caruco/CMakeFiles/caruco.dir/board_detector.cpp.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board_detector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_4)
+caruco/CMakeFiles/caruco.dir/board_detector.cpp.o: /home/rujian/fuerte_workspace/drone_demo/native/caruco/board_detector.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object caruco/CMakeFiles/caruco.dir/board_detector.cpp.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/board_detector.cpp.o -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board_detector.cpp
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/board_detector.cpp.o -c /home/rujian/fuerte_workspace/drone_demo/native/caruco/board_detector.cpp
 
 caruco/CMakeFiles/caruco.dir/board_detector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caruco.dir/board_detector.cpp.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board_detector.cpp > CMakeFiles/caruco.dir/board_detector.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/caruco/board_detector.cpp > CMakeFiles/caruco.dir/board_detector.cpp.i
 
 caruco/CMakeFiles/caruco.dir/board_detector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caruco.dir/board_detector.cpp.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/board_detector.cpp -o CMakeFiles/caruco.dir/board_detector.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/caruco/board_detector.cpp -o CMakeFiles/caruco.dir/board_detector.cpp.s
 
 caruco/CMakeFiles/caruco.dir/board_detector.cpp.o.requires:
 .PHONY : caruco/CMakeFiles/caruco.dir/board_detector.cpp.o.requires
@@ -139,18 +139,18 @@ caruco/CMakeFiles/caruco.dir/board_detector.cpp.o.provides: caruco/CMakeFiles/ca
 caruco/CMakeFiles/caruco.dir/board_detector.cpp.o.provides.build: caruco/CMakeFiles/caruco.dir/board_detector.cpp.o
 
 caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.o: caruco/CMakeFiles/caruco.dir/flags.make
-caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/camera_parameters.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_5)
+caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.o: /home/rujian/fuerte_workspace/drone_demo/native/caruco/camera_parameters.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/camera_parameters.cpp.o -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/camera_parameters.cpp
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/camera_parameters.cpp.o -c /home/rujian/fuerte_workspace/drone_demo/native/caruco/camera_parameters.cpp
 
 caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caruco.dir/camera_parameters.cpp.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/camera_parameters.cpp > CMakeFiles/caruco.dir/camera_parameters.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/caruco/camera_parameters.cpp > CMakeFiles/caruco.dir/camera_parameters.cpp.i
 
 caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caruco.dir/camera_parameters.cpp.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/camera_parameters.cpp -o CMakeFiles/caruco.dir/camera_parameters.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/caruco/camera_parameters.cpp -o CMakeFiles/caruco.dir/camera_parameters.cpp.s
 
 caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.o.requires:
 .PHONY : caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.o.requires
@@ -162,18 +162,18 @@ caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.o.provides: caruco/CMakeFiles
 caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.o.provides.build: caruco/CMakeFiles/caruco.dir/camera_parameters.cpp.o
 
 caruco/CMakeFiles/caruco.dir/marker.cpp.o: caruco/CMakeFiles/caruco.dir/flags.make
-caruco/CMakeFiles/caruco.dir/marker.cpp.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_6)
+caruco/CMakeFiles/caruco.dir/marker.cpp.o: /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object caruco/CMakeFiles/caruco.dir/marker.cpp.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/marker.cpp.o -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker.cpp
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/marker.cpp.o -c /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker.cpp
 
 caruco/CMakeFiles/caruco.dir/marker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caruco.dir/marker.cpp.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker.cpp > CMakeFiles/caruco.dir/marker.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker.cpp > CMakeFiles/caruco.dir/marker.cpp.i
 
 caruco/CMakeFiles/caruco.dir/marker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caruco.dir/marker.cpp.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker.cpp -o CMakeFiles/caruco.dir/marker.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker.cpp -o CMakeFiles/caruco.dir/marker.cpp.s
 
 caruco/CMakeFiles/caruco.dir/marker.cpp.o.requires:
 .PHONY : caruco/CMakeFiles/caruco.dir/marker.cpp.o.requires
@@ -185,18 +185,18 @@ caruco/CMakeFiles/caruco.dir/marker.cpp.o.provides: caruco/CMakeFiles/caruco.dir
 caruco/CMakeFiles/caruco.dir/marker.cpp.o.provides.build: caruco/CMakeFiles/caruco.dir/marker.cpp.o
 
 caruco/CMakeFiles/caruco.dir/marker_detector.cpp.o: caruco/CMakeFiles/caruco.dir/flags.make
-caruco/CMakeFiles/caruco.dir/marker_detector.cpp.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker_detector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_7)
+caruco/CMakeFiles/caruco.dir/marker_detector.cpp.o: /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker_detector.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object caruco/CMakeFiles/caruco.dir/marker_detector.cpp.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/marker_detector.cpp.o -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker_detector.cpp
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/marker_detector.cpp.o -c /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker_detector.cpp
 
 caruco/CMakeFiles/caruco.dir/marker_detector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caruco.dir/marker_detector.cpp.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker_detector.cpp > CMakeFiles/caruco.dir/marker_detector.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker_detector.cpp > CMakeFiles/caruco.dir/marker_detector.cpp.i
 
 caruco/CMakeFiles/caruco.dir/marker_detector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caruco.dir/marker_detector.cpp.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker_detector.cpp -o CMakeFiles/caruco.dir/marker_detector.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker_detector.cpp -o CMakeFiles/caruco.dir/marker_detector.cpp.s
 
 caruco/CMakeFiles/caruco.dir/marker_detector.cpp.o.requires:
 .PHONY : caruco/CMakeFiles/caruco.dir/marker_detector.cpp.o.requires
@@ -208,18 +208,18 @@ caruco/CMakeFiles/caruco.dir/marker_detector.cpp.o.provides: caruco/CMakeFiles/c
 caruco/CMakeFiles/caruco.dir/marker_detector.cpp.o.provides.build: caruco/CMakeFiles/caruco.dir/marker_detector.cpp.o
 
 caruco/CMakeFiles/caruco.dir/marker_vector.cpp.o: caruco/CMakeFiles/caruco.dir/flags.make
-caruco/CMakeFiles/caruco.dir/marker_vector.cpp.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker_vector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_8)
+caruco/CMakeFiles/caruco.dir/marker_vector.cpp.o: /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker_vector.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object caruco/CMakeFiles/caruco.dir/marker_vector.cpp.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/marker_vector.cpp.o -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker_vector.cpp
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/caruco.dir/marker_vector.cpp.o -c /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker_vector.cpp
 
 caruco/CMakeFiles/caruco.dir/marker_vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caruco.dir/marker_vector.cpp.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker_vector.cpp > CMakeFiles/caruco.dir/marker_vector.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker_vector.cpp > CMakeFiles/caruco.dir/marker_vector.cpp.i
 
 caruco/CMakeFiles/caruco.dir/marker_vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caruco.dir/marker_vector.cpp.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco/marker_vector.cpp -o CMakeFiles/caruco.dir/marker_vector.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/caruco/marker_vector.cpp -o CMakeFiles/caruco.dir/marker_vector.cpp.s
 
 caruco/CMakeFiles/caruco.dir/marker_vector.cpp.o.requires:
 .PHONY : caruco/CMakeFiles/caruco.dir/marker_vector.cpp.o.requires
@@ -273,7 +273,7 @@ caruco/libcaruco.so: /opt/ros/fuerte/lib/libopencv_videostab.so
 caruco/libcaruco.so: caruco/CMakeFiles/caruco.dir/build.make
 caruco/libcaruco.so: caruco/CMakeFiles/caruco.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libcaruco.so"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/caruco.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/caruco.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 caruco/CMakeFiles/caruco.dir/build: caruco/libcaruco.so
@@ -290,10 +290,10 @@ caruco/CMakeFiles/caruco.dir/requires: caruco/CMakeFiles/caruco.dir/marker_vecto
 .PHONY : caruco/CMakeFiles/caruco.dir/requires
 
 caruco/CMakeFiles/caruco.dir/clean:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco && $(CMAKE_COMMAND) -P CMakeFiles/caruco.dir/cmake_clean.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco && $(CMAKE_COMMAND) -P CMakeFiles/caruco.dir/cmake_clean.cmake
 .PHONY : caruco/CMakeFiles/caruco.dir/clean
 
 caruco/CMakeFiles/caruco.dir/depend:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/caruco /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco/CMakeFiles/caruco.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rujian/fuerte_workspace/drone_demo/native /home/rujian/fuerte_workspace/drone_demo/native/caruco /home/rujian/fuerte_workspace/drone_demo/build/native-linux /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco /home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco/CMakeFiles/caruco.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : caruco/CMakeFiles/caruco.dir/depend
 

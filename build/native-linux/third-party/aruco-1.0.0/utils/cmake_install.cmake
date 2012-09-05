@@ -1,8 +1,8 @@
-# Install script for directory: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils
+# Install script for directory: /home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native")
+  SET(CMAKE_INSTALL_PREFIX "/home/rujian/fuerte_workspace/drone_demo/ardrone/native")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,15 +37,15 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple_board")
     FILE(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple_board"
-         RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_simple_board")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_simple_board")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple_board" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple_board")
     FILE(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple_board"
-         OLD_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
-         NEW_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         OLD_RPATH "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
+         NEW_RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
     IF(CMAKE_INSTALL_DO_STRIP)
       EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple_board")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -57,15 +57,15 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple")
     FILE(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple"
-         RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_simple")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_simple")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple")
     FILE(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple"
-         OLD_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
-         NEW_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         OLD_RPATH "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
+         NEW_RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
     IF(CMAKE_INSTALL_DO_STRIP)
       EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_simple")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -77,15 +77,15 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_board")
     FILE(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_board"
-         RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_create_board")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_create_board")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_board" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_board")
     FILE(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_board"
-         OLD_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
-         NEW_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         OLD_RPATH "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
+         NEW_RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
     IF(CMAKE_INSTALL_DO_STRIP)
       EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_board")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -97,15 +97,15 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_marker")
     FILE(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_marker"
-         RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_create_marker")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_create_marker")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_marker" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_marker")
     FILE(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_marker"
-         OLD_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
-         NEW_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         OLD_RPATH "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
+         NEW_RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
     IF(CMAKE_INSTALL_DO_STRIP)
       EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_create_marker")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -117,15 +117,15 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board")
     FILE(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board"
-         RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_test_board")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_test_board")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board")
     FILE(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board"
-         OLD_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
-         NEW_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         OLD_RPATH "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
+         NEW_RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
     IF(CMAKE_INSTALL_DO_STRIP)
       EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -137,15 +137,15 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test")
     FILE(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test"
-         RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_test")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_test")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test")
     FILE(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test"
-         OLD_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
-         NEW_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         OLD_RPATH "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
+         NEW_RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
     IF(CMAKE_INSTALL_DO_STRIP)
       EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -157,15 +157,15 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_gl")
     FILE(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_gl"
-         RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_test_gl")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_test_gl")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_gl" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_gl")
     FILE(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_gl"
-         OLD_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
-         NEW_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         OLD_RPATH "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
+         NEW_RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
     IF(CMAKE_INSTALL_DO_STRIP)
       EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_gl")
     ENDIF(CMAKE_INSTALL_DO_STRIP)
@@ -177,15 +177,15 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board_gl")
     FILE(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board_gl"
-         RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_test_board_gl")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/aruco_test_board_gl")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board_gl" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board_gl")
     FILE(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board_gl"
-         OLD_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
-         NEW_RPATH "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
+         OLD_RPATH "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/src:/opt/ros/fuerte/lib:"
+         NEW_RPATH "/home/rujian/fuerte_workspace/drone_demo/ardrone/native/lib:/opt/ros/fuerte/lib")
     IF(CMAKE_INSTALL_DO_STRIP)
       EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/aruco_test_board_gl")
     ENDIF(CMAKE_INSTALL_DO_STRIP)

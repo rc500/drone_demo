@@ -1,8 +1,8 @@
-# Install script for directory: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native
+# Install script for directory: /home/rujian/fuerte_workspace/drone_demo/native
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/ardrone/native")
+  SET(CMAKE_INSTALL_PREFIX "/home/rujian/fuerte_workspace/drone_demo/ardrone/native")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,9 +34,9 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/cmake_install.cmake")
-  INCLUDE("/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264/cmake_install.cmake")
-  INCLUDE("/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/caruco/cmake_install.cmake")
+  INCLUDE("/home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/cmake_install.cmake")
+  INCLUDE("/home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264/cmake_install.cmake")
+  INCLUDE("/home/rujian/fuerte_workspace/drone_demo/build/native-linux/caruco/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -46,7 +46,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/rujian/fuerte_workspace/drone_demo/build/native-linux/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native
+CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/drone_demo/native
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux
+CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/drone_demo/build/native-linux
 
 # Include any dependencies generated for this target.
 include third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/depend.make
@@ -47,18 +47,18 @@ include third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/progres
 include third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/flags.make
 
 third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.o: third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/flags.make
-third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_test_board_gl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_1)
+third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.o: /home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_test_board_gl.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.o -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_test_board_gl.cpp
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.o -c /home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_test_board_gl.cpp
 
 third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_test_board_gl.cpp > CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_test_board_gl.cpp > CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.i
 
 third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_test_board_gl.cpp -o CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils/aruco_test_board_gl.cpp -o CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.s
 
 third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.o.requires:
 .PHONY : third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/aruco_test_board_gl.cpp.o.requires
@@ -101,7 +101,7 @@ third-party/aruco-1.0.0/utils/aruco_test_board_gl: /opt/ros/fuerte/lib/libopencv
 third-party/aruco-1.0.0/utils/aruco_test_board_gl: third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/build.make
 third-party/aruco-1.0.0/utils/aruco_test_board_gl: third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable aruco_test_board_gl"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aruco_test_board_gl.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aruco_test_board_gl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/build: third-party/aruco-1.0.0/utils/aruco_test_board_gl
@@ -111,10 +111,10 @@ third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/requires: third
 .PHONY : third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/requires
 
 third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/clean:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && $(CMAKE_COMMAND) -P CMakeFiles/aruco_test_board_gl.dir/cmake_clean.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils && $(CMAKE_COMMAND) -P CMakeFiles/aruco_test_board_gl.dir/cmake_clean.cmake
 .PHONY : third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/clean
 
 third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/depend:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0/utils /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rujian/fuerte_workspace/drone_demo/native /home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0/utils /home/rujian/fuerte_workspace/drone_demo/build/native-linux /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : third-party/aruco-1.0.0/utils/CMakeFiles/aruco_test_board_gl.dir/depend
 

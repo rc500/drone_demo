@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native
+CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/drone_demo/native
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux
+CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/drone_demo/build/native-linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,7 +98,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +108,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CPackSourceConfig.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -127,14 +127,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/CMakeFiles/progress.marks
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles 0
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/CMakeFiles/progress.marks
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/clean
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/preinstall
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/preinstall
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/rule:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/rule
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f CMakeFiles/Makefile2 third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/rule
 .PHONY : third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -167,7 +167,7 @@ uninstall: third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/rule
 
 # fast build rule for target.
 uninstall/fast:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/build.make third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/build
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(MAKE) -f third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/build.make third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 # Help Target
@@ -196,6 +196,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

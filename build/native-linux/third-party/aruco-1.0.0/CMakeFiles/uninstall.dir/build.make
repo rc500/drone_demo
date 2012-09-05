@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native
+CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/drone_demo/native
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux
+CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/drone_demo/build/native-linux
 
 # Utility rule file for uninstall.
 
@@ -43,7 +43,7 @@ CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experim
 include third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/progress.make
 
 third-party/aruco-1.0.0/CMakeFiles/uninstall:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0 && /usr/bin/cmake -P /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/cmake_uninstall.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0 && /usr/bin/cmake -P /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/cmake_uninstall.cmake
 
 uninstall: third-party/aruco-1.0.0/CMakeFiles/uninstall
 uninstall: third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/build.make
@@ -54,10 +54,10 @@ third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/build
 
 third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/clean:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/clean
 
 third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/depend:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/third-party/aruco-1.0.0 /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0 /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rujian/fuerte_workspace/drone_demo/native /home/rujian/fuerte_workspace/drone_demo/native/third-party/aruco-1.0.0 /home/rujian/fuerte_workspace/drone_demo/build/native-linux /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0 /home/rujian/fuerte_workspace/drone_demo/build/native-linux/third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : third-party/aruco-1.0.0/CMakeFiles/uninstall.dir/depend
 

@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native
+CMAKE_SOURCE_DIR = /home/rujian/fuerte_workspace/drone_demo/native
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux
+CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/drone_demo/build/native-linux
 
 # Include any dependencies generated for this target.
 include libp264/CMakeFiles/p264.dir/depend.make
@@ -47,18 +47,18 @@ include libp264/CMakeFiles/p264.dir/progress.make
 include libp264/CMakeFiles/p264.dir/flags.make
 
 libp264/CMakeFiles/p264.dir/libp264.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/libp264.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/libp264.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_1)
+libp264/CMakeFiles/p264.dir/libp264.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/libp264.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/libp264.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/libp264.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/libp264.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/libp264.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/libp264.c
 
 libp264/CMakeFiles/p264.dir/libp264.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/libp264.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/libp264.c > CMakeFiles/p264.dir/libp264.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/libp264.c > CMakeFiles/p264.dir/libp264.c.i
 
 libp264/CMakeFiles/p264.dir/libp264.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/libp264.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/libp264.c -o CMakeFiles/p264.dir/libp264.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/libp264.c -o CMakeFiles/p264.dir/libp264.c.s
 
 libp264/CMakeFiles/p264.dir/libp264.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/libp264.c.o.requires
@@ -70,18 +70,18 @@ libp264/CMakeFiles/p264.dir/libp264.c.o.provides: libp264/CMakeFiles/p264.dir/li
 libp264/CMakeFiles/p264.dir/libp264.c.o.provides.build: libp264/CMakeFiles/p264.dir/libp264.c.o
 
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Api/vp_api_io_multi_stage.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_2)
+libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Api/vp_api_io_multi_stage.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Api/vp_api_io_multi_stage.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Api/vp_api_io_multi_stage.c
 
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Api/vp_api_io_multi_stage.c > CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Api/vp_api_io_multi_stage.c > CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.i
 
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Api/vp_api_io_multi_stage.c -o CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Api/vp_api_io_multi_stage.c -o CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.s
 
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o.requires
@@ -93,18 +93,18 @@ libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o.provides: libp264/C
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o.provides.build: libp264/CMakeFiles/p264.dir/VP_Api/vp_api_io_multi_stage.c.o
 
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Api/vp_api_error.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_3)
+libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Api/vp_api_error.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Api/vp_api_error.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Api/vp_api_error.c
 
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VP_Api/vp_api_error.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Api/vp_api_error.c > CMakeFiles/p264.dir/VP_Api/vp_api_error.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Api/vp_api_error.c > CMakeFiles/p264.dir/VP_Api/vp_api_error.c.i
 
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VP_Api/vp_api_error.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Api/vp_api_error.c -o CMakeFiles/p264.dir/VP_Api/vp_api_error.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Api/vp_api_error.c -o CMakeFiles/p264.dir/VP_Api/vp_api_error.c.s
 
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o.requires
@@ -116,18 +116,18 @@ libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o.provides: libp264/CMakeFiles
 libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o.provides.build: libp264/CMakeFiles/p264.dir/VP_Api/vp_api_error.c.o
 
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Os/vp_os_malloc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_4)
+libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Os/vp_os_malloc.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Os/vp_os_malloc.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Os/vp_os_malloc.c
 
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Os/vp_os_malloc.c > CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Os/vp_os_malloc.c > CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.i
 
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Os/vp_os_malloc.c -o CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Os/vp_os_malloc.c -o CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.s
 
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o.requires
@@ -139,18 +139,18 @@ libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o.provides: libp264/CMakeFiles/
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o.provides.build: libp264/CMakeFiles/p264.dir/VP_Os/vp_os_malloc.c.o
 
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Os/vp_os_error_handling.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_5)
+libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Os/vp_os_error_handling.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Os/vp_os_error_handling.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Os/vp_os_error_handling.c
 
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Os/vp_os_error_handling.c > CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Os/vp_os_error_handling.c > CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.i
 
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VP_Os/vp_os_error_handling.c -o CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VP_Os/vp_os_error_handling.c -o CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.s
 
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o.requires
@@ -162,18 +162,18 @@ libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o.provides: libp264/CMa
 libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o.provides.build: libp264/CMakeFiles/p264.dir/VP_Os/vp_os_error_handling.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_codec.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_6)
+libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_codec.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_codec.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_codec.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_codec.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_codec.c
 
 libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/video_codec.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_codec.c > CMakeFiles/p264.dir/VLIB/video_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_codec.c > CMakeFiles/p264.dir/VLIB/video_codec.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/video_codec.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_codec.c -o CMakeFiles/p264.dir/VLIB/video_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_codec.c -o CMakeFiles/p264.dir/VLIB/video_codec.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o.requires
@@ -185,18 +185,18 @@ libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o.provides: libp264/CMakeFiles/p2
 libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/video_codec.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_huffman.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_7)
+libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_huffman.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_huffman.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_huffman.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_huffman.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_huffman.c
 
 libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/video_huffman.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_huffman.c > CMakeFiles/p264.dir/VLIB/video_huffman.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_huffman.c > CMakeFiles/p264.dir/VLIB/video_huffman.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/video_huffman.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_huffman.c -o CMakeFiles/p264.dir/VLIB/video_huffman.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_huffman.c -o CMakeFiles/p264.dir/VLIB/video_huffman.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o.requires
@@ -208,18 +208,18 @@ libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o.provides: libp264/CMakeFiles/
 libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/video_huffman.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_packetizer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_8)
+libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_packetizer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_packetizer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_packetizer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_packetizer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_packetizer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/video_packetizer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_packetizer.c > CMakeFiles/p264.dir/VLIB/video_packetizer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_packetizer.c > CMakeFiles/p264.dir/VLIB/video_packetizer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/video_packetizer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_packetizer.c -o CMakeFiles/p264.dir/VLIB/video_packetizer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_packetizer.c -o CMakeFiles/p264.dir/VLIB/video_packetizer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o.requires
@@ -231,18 +231,18 @@ libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o.provides: libp264/CMakeFil
 libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/video_packetizer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_controller.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_9)
+libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_controller.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_controller.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_controller.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_controller.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_controller.c
 
 libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/video_controller.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_controller.c > CMakeFiles/p264.dir/VLIB/video_controller.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_controller.c > CMakeFiles/p264.dir/VLIB/video_controller.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/video_controller.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_controller.c -o CMakeFiles/p264.dir/VLIB/video_controller.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_controller.c -o CMakeFiles/p264.dir/VLIB/video_controller.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o.requires
@@ -254,18 +254,18 @@ libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o.provides: libp264/CMakeFil
 libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/video_controller.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_macroblock.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_10)
+libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_macroblock.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_macroblock.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_macroblock.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_macroblock.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_macroblock.c
 
 libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/video_macroblock.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_macroblock.c > CMakeFiles/p264.dir/VLIB/video_macroblock.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_macroblock.c > CMakeFiles/p264.dir/VLIB/video_macroblock.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/video_macroblock.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_macroblock.c -o CMakeFiles/p264.dir/VLIB/video_macroblock.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_macroblock.c -o CMakeFiles/p264.dir/VLIB/video_macroblock.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o.requires
@@ -277,18 +277,18 @@ libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o.provides: libp264/CMakeFil
 libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/video_macroblock.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_picture.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_11)
+libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_picture.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_picture.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_picture.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_picture.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_picture.c
 
 libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/video_picture.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_picture.c > CMakeFiles/p264.dir/VLIB/video_picture.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_picture.c > CMakeFiles/p264.dir/VLIB/video_picture.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/video_picture.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_picture.c -o CMakeFiles/p264.dir/VLIB/video_picture.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_picture.c -o CMakeFiles/p264.dir/VLIB/video_picture.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o.requires
@@ -300,18 +300,18 @@ libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o.provides: libp264/CMakeFiles/
 libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/video_picture.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_dct.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_12)
+libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_dct.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_dct.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_dct.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_dct.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_dct.c
 
 libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/video_dct.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_dct.c > CMakeFiles/p264.dir/VLIB/video_dct.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_dct.c > CMakeFiles/p264.dir/VLIB/video_dct.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/video_dct.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_dct.c -o CMakeFiles/p264.dir/VLIB/video_dct.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_dct.c -o CMakeFiles/p264.dir/VLIB/video_dct.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o.requires
@@ -323,18 +323,18 @@ libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o.provides: libp264/CMakeFiles/p264
 libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/video_dct.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_mem32.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_13)
+libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_mem32.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_mem32.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_mem32.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_mem32.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_mem32.c
 
 libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/video_mem32.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_mem32.c > CMakeFiles/p264.dir/VLIB/video_mem32.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_mem32.c > CMakeFiles/p264.dir/VLIB/video_mem32.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/video_mem32.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_mem32.c -o CMakeFiles/p264.dir/VLIB/video_mem32.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_mem32.c -o CMakeFiles/p264.dir/VLIB/video_mem32.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o.requires
@@ -346,18 +346,18 @@ libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o.provides: libp264/CMakeFiles/p2
 libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/video_mem32.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_quantizer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_14)
+libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_quantizer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_quantizer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_quantizer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/video_quantizer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_quantizer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/video_quantizer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_quantizer.c > CMakeFiles/p264.dir/VLIB/video_quantizer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_quantizer.c > CMakeFiles/p264.dir/VLIB/video_quantizer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/video_quantizer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/video_quantizer.c -o CMakeFiles/p264.dir/VLIB/video_quantizer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/video_quantizer.c -o CMakeFiles/p264.dir/VLIB/video_quantizer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o.requires
@@ -369,18 +369,18 @@ libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o.provides: libp264/CMakeFile
 libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/video_quantizer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/Platform/x86/video_utils.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_15)
+libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/Platform/x86/video_utils.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/Platform/x86/video_utils.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/Platform/x86/video_utils.c
 
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/Platform/x86/video_utils.c > CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/Platform/x86/video_utils.c > CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/Platform/x86/video_utils.c -o CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/Platform/x86/video_utils.c -o CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o.requires
@@ -392,18 +392,18 @@ libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o.provides: libp264/
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/video_utils.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_16)
+libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc.c
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o.requires
@@ -415,18 +415,18 @@ libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o.provides: libp264/CMakeFiles/p264
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_gob_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_17)
+libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_gob_layer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_gob_layer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_gob_layer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_gob_layer.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_gob_layer.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_gob_layer.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_gob_layer.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o.requires
@@ -438,18 +438,18 @@ libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o.provides: libp264/CMake
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_gob_layer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_picture_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_18)
+libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_picture_layer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_picture_layer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_picture_layer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_picture_layer.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_picture_layer.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_picture_layer.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_picture_layer.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o.requires
@@ -461,18 +461,18 @@ libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o.provides: libp264/C
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_picture_layer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_codec.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_19)
+libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_codec.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_codec.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_codec.c
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_codec.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_codec.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_codec.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_codec.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o.requires
@@ -484,18 +484,18 @@ libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o.provides: libp264/CMakeFile
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_codec.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_mb_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_20)
+libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_mb_layer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_mb_layer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_mb_layer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_mb_layer.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_mb_layer.c > CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/UVLC/uvlc_mb_layer.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/UVLC/uvlc_mb_layer.c -o CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o.requires
@@ -507,18 +507,18 @@ libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o.provides: libp264/CMakeF
 libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/UVLC/uvlc_mb_layer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/Platform/x86/UVLC/uvlc_codec.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_21)
+libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/Platform/x86/UVLC/uvlc_codec.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/Platform/x86/UVLC/uvlc_codec.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/Platform/x86/UVLC/uvlc_codec.c
 
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/Platform/x86/UVLC/uvlc_codec.c > CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/Platform/x86/UVLC/uvlc_codec.c > CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/Platform/x86/UVLC/uvlc_codec.c -o CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/Platform/x86/UVLC/uvlc_codec.c -o CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o.requires
@@ -530,18 +530,18 @@ libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o.provides: libp
 libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/Platform/x86/UVLC/uvlc_codec.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_codec.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_22)
+libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_codec.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_codec.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_codec.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_codec.c > CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_codec.c > CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_codec.c -o CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_codec.c -o CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o.requires
@@ -553,18 +553,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o.provides: libp264/CMakeFile
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P263/p263_codec.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_huffman.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_23)
+libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_huffman.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_huffman.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_huffman.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_huffman.c > CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_huffman.c > CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_huffman.c -o CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_huffman.c -o CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o.requires
@@ -576,18 +576,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o.provides: libp264/CMakeFi
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P263/p263_huffman.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_picture_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_24)
+libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_picture_layer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_picture_layer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_picture_layer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_picture_layer.c > CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_picture_layer.c > CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_picture_layer.c -o CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_picture_layer.c -o CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o.requires
@@ -599,18 +599,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o.provides: libp264/C
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P263/p263_picture_layer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_gob_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_25)
+libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_gob_layer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_gob_layer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_gob_layer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_gob_layer.c > CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_gob_layer.c > CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_gob_layer.c -o CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_gob_layer.c -o CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o.requires
@@ -622,18 +622,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o.provides: libp264/CMake
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P263/p263_gob_layer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_mb_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_26)
+libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_mb_layer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_mb_layer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_mb_layer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_mb_layer.c > CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_mb_layer.c > CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P263/p263_mb_layer.c -o CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P263/p263_mb_layer.c -o CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o.requires
@@ -645,18 +645,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o.provides: libp264/CMakeF
 libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P263/p263_mb_layer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_27)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264.c > CMakeFiles/p264.dir/VLIB/P264/p264.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264.c > CMakeFiles/p264.dir/VLIB/P264/p264.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264.c -o CMakeFiles/p264.dir/VLIB/P264/p264.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264.c -o CMakeFiles/p264.dir/VLIB/P264/p264.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o.requires
@@ -668,18 +668,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o.provides: libp264/CMakeFiles/p264
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_inter_mc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_28)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_inter_mc.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_inter_mc.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_inter_mc.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_inter_mc.c > CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_inter_mc.c > CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_inter_mc.c -o CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_inter_mc.c -o CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o.requires
@@ -691,18 +691,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o.provides: libp264/CMakeF
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_inter_mc.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_merge.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_29)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_merge.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_merge.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_merge.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_merge.c > CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_merge.c > CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_merge.c -o CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_merge.c -o CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o.requires
@@ -714,18 +714,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o.provides: libp264/CMakeFile
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_merge.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_transform.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_30)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_transform.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_transform.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_transform.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_transform.c > CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_transform.c > CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_transform.c -o CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_transform.c -o CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o.requires
@@ -737,18 +737,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o.provides: libp264/CMake
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_transform.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_codec.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_31)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_codec.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_codec.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_codec.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_codec.c > CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_codec.c > CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_codec.c -o CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_codec.c -o CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o.requires
@@ -760,18 +760,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o.provides: libp264/CMakeFile
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_codec.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_intra_pred.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_32)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_intra_pred.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_intra_pred.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_intra_pred.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_intra_pred.c > CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_intra_pred.c > CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_intra_pred.c -o CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_intra_pred.c -o CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o.requires
@@ -783,18 +783,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o.provides: libp264/CMak
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_intra_pred.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_picture_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_33)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_picture_layer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_picture_layer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_picture_layer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_picture_layer.c > CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_picture_layer.c > CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_picture_layer.c -o CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_picture_layer.c -o CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o.requires
@@ -806,18 +806,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o.provides: libp264/C
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_picture_layer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_zigzag.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_34)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_zigzag.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_zigzag.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_zigzag.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_zigzag.c > CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_zigzag.c > CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_zigzag.c -o CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_zigzag.c -o CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o.requires
@@ -829,18 +829,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o.provides: libp264/CMakeFil
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_zigzag.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_gob_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_35)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_gob_layer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_gob_layer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_gob_layer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_gob_layer.c > CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_gob_layer.c > CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_gob_layer.c -o CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_gob_layer.c -o CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o.requires
@@ -852,18 +852,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o.provides: libp264/CMake
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_gob_layer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_mb_layer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_36)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_mb_layer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_mb_layer.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_mb_layer.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_mb_layer.c > CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_mb_layer.c > CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_mb_layer.c -o CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_mb_layer.c -o CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o.requires
@@ -875,18 +875,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o.provides: libp264/CMakeF
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_mb_layer.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_Qp.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_37)
+libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_Qp.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_Qp.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_Qp.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_Qp.c > CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_Qp.c > CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/p264_Qp.c -o CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/p264_Qp.c -o CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o.requires
@@ -898,18 +898,18 @@ libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o.provides: libp264/CMakeFiles/p
 libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o.provides.build: libp264/CMakeFiles/p264.dir/VLIB/P264/p264_Qp.c.o
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o: libp264/CMakeFiles/p264.dir/flags.make
-libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o: /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/video_p264.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_38)
+libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o: /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/video_p264.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/build/native-linux/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o   -c /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/video_p264.c
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o   -c /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/video_p264.c
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p264.dir/VLIB/P264/video_p264.c.i"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/video_p264.c > CMakeFiles/p264.dir/VLIB/P264/video_p264.c.i
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/video_p264.c > CMakeFiles/p264.dir/VLIB/P264/video_p264.c.i
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p264.dir/VLIB/P264/video_p264.c.s"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264/VLIB/P264/video_p264.c -o CMakeFiles/p264.dir/VLIB/P264/video_p264.c.s
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/rujian/fuerte_workspace/drone_demo/native/libp264/VLIB/P264/video_p264.c -o CMakeFiles/p264.dir/VLIB/P264/video_p264.c.s
 
 libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o.requires:
 .PHONY : libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o.requires
@@ -1005,7 +1005,7 @@ libp264/libp264.so: libp264/CMakeFiles/p264.dir/VLIB/P264/video_p264.c.o
 libp264/libp264.so: libp264/CMakeFiles/p264.dir/build.make
 libp264/libp264.so: libp264/CMakeFiles/p264.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library libp264.so"
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/p264.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/p264.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libp264/CMakeFiles/p264.dir/build: libp264/libp264.so
@@ -1052,10 +1052,10 @@ libp264/CMakeFiles/p264.dir/requires: libp264/CMakeFiles/p264.dir/VLIB/P264/vide
 .PHONY : libp264/CMakeFiles/p264.dir/requires
 
 libp264/CMakeFiles/p264.dir/clean:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 && $(CMAKE_COMMAND) -P CMakeFiles/p264.dir/cmake_clean.cmake
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 && $(CMAKE_COMMAND) -P CMakeFiles/p264.dir/cmake_clean.cmake
 .PHONY : libp264/CMakeFiles/p264.dir/clean
 
 libp264/CMakeFiles/p264.dir/depend:
-	cd /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/native/libp264 /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264 /home/rujian/fuerte_workspace/brown-ros-pkg-read-only/experimental/drone_demo/build/native-linux/libp264/CMakeFiles/p264.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rujian/fuerte_workspace/drone_demo/build/native-linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rujian/fuerte_workspace/drone_demo/native /home/rujian/fuerte_workspace/drone_demo/native/libp264 /home/rujian/fuerte_workspace/drone_demo/build/native-linux /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264 /home/rujian/fuerte_workspace/drone_demo/build/native-linux/libp264/CMakeFiles/p264.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libp264/CMakeFiles/p264.dir/depend
 
