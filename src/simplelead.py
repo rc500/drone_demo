@@ -9,7 +9,7 @@ from std_msgs.msg import Empty, UInt8
 from time import time, sleep
 import sys
 
-from image_processor_lead import image_conv_processor
+from simple_im_proc import image_conv_processor
 
 class lead_controller:
 	
@@ -48,17 +48,18 @@ class lead_controller:
 		self.camselectpub = rospy.Publisher('/ardrone/camselect', UInt8)
 		self.hoverpub = rospy.Publisher('/ardrone/hover', Empty)
 		
-		self.ref = {'al':1500}
-		self.error = {'al':[]}
+		self.ref = {'al':1500.0, 'ps':0.0}
+		self.error = {'al':[], 'ps':[]}
 	
 	def nd_logger(self,msg):
 		self.nd_log['tm'].append(time()-self.reftm)
 		self.nd_log['th'].append(msg.rotY)
+		self.nd_log['ps'].append(msg.rotZ)
 		self.nd_log['vx'].append(msg.vx)
 		self.nd_log['al'].append(msg.altd)
 		self.error['al'].append(self.ref['al']-msg.altd)
+		self.error['ps'].append(self.ref['ps']-msg.rotZ)
 		self.seq = self.seq + 1
-		#print 'altd: ', msg.altd
 	
 	def cmd_logger(self,twcmd):
 		self.cmd_log['tm'].append(time()-self.reftm)
@@ -69,12 +70,14 @@ class lead_controller:
 		self.mks_log['coords'].append(coords)
 		self.mks_log['mids'].append(mids)
 		self.mksseq = self.mksseq + 1
+		#print coords, mids
 	
 	def main_procedure(self):
 		sleep(1)	#nb: sleep 0.3 is min necessary wait before you can publish. perhaps bc ros master takes time to setup publisher.
 		self.camselectpub.publish(1);	print 'published camselect = downward facing cam'
 		self.icp = image_conv_processor(self)
 		self.takeoffpub.publish(Empty())
+		self.hoverpub.publish(Empty())
 		sleep(8); print '4'; sleep(1); print '3'; sleep(1); print '2'; sleep(1); print '1'; sleep(1)
 		rospy.Timer(rospy.Duration(1.0/40), self.main_timer_callback)
 	
@@ -82,16 +85,17 @@ class lead_controller:
 		updatecmd = False
 		if self.seq != self.lastseq:
 			self.twist.linear.z = max(min(0.0017*self.error['al'][-1], 1.0), -1.0)
+			self.twist.angular.z = max(min(self.error['ps'][-1]/120, 1.0), -1.0)
+			print 'error, twist: ', self.error['ps'][-1], ',     ', self.twist.angular.z
 			updatecmd = True
-			#self.cmdpub.publish(self.twist)
-			#self.cmd_logger(self.twist)
 			self.lastseq = self.seq
-			#print '****************** ', 'seq: ', self.lastseq, 'cmd: ', self.twist.linear.z, ' ********************'
 		else:
 			pass
 			#print '------------------ No New Navdata -------------------'
 		
+		"""
 		if self.mksseq != self.lastmksseq:
+						
 			if len(self.mks_log['coords'][-1]) != 0:
 				if self.trackmid not in self.mks_log['mids'][-1] and self.misstracktimes<self.misslimit:
 					self.misstracktimes = self.misstracktimes + 1
@@ -135,9 +139,7 @@ class lead_controller:
 					#self.lasterr = None
 					self.twist.linear.x = 0; self.twist.linear.y = 0
 					updatecmd = True
-			
-			#self.cmdpub.publish(self.twist)
-			#self.cmd_logger(self.twist)		
+					
 			self.lastmksseq = self.mksseq
 			self.noframetimes = 0
 			#endif there is a new frame
@@ -154,12 +156,13 @@ class lead_controller:
 				self.twist.linear.x = 0; self.twist.linear.y = 0
 				updatecmd = True
 			#print '------------------ No New Marker Data -------------------'
+		"""
 		
 		if updatecmd:
 			self.cmdpub.publish(self.twist)
 			self.cmd_logger(self.twist)
-			print 'twist: \n', self.twist.linear
-			print 'trackmid: ', self.trackmid
+			#print 'twist: \n', self.twist.linear
+			#print 'trackmid: ', self.trackmid
 
 			
 				
@@ -167,8 +170,8 @@ class lead_controller:
 
 def main(args):
 	rospy.init_node('drone_lead_controller', anonymous=True)
-	lc = lead_controller()
-	lc.main_procedure()
+	slc = lead_controller()
+	slc.main_procedure()
 	rospy.spin()
 	
 if __name__ == '__main__':

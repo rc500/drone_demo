@@ -35,12 +35,12 @@ class demo_controller:
 	def procedure(self):
 		self.takeoffpub.publish(Empty());	print 'takeoff'
 		sleep(10)
-		self.twist.linear.y = 0.1
+		self.twist.angular.z = 0.5
 		self.cmdpub.publish(self.twist);			print 'twist'
-		sleep(1)
-		self.twist.linear.y = -0.1
+		sleep(2)
+		self.twist.angular.z = -0.5
 		self.cmdpub.publish(self.twist);			print 'reverse'
-		sleep(1)
+		sleep(2)
 		self.hoverpub.publish(Empty());		print 'hover'
 		sleep(2)
 		self.landpub.publish(Empty());		print 'land'
