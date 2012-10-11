@@ -23,7 +23,7 @@ class demo_controller:
 		self.resetpub = rospy.Publisher('/ardrone/reset', Empty)
 		self.takeoffpub = rospy.Publisher('/ardrone/takeoff', Empty)
 		self.navdatasub = rospy.Subscriber('/ardrone/navdata', Navdata, self.navdataCallback)
-		self.hoverpub = rospy.Publisher('/ardrone/hover', Empty)
+		#self.hoverpub = rospy.Publisher('/ardrone/hover', Empty)
 		self.twist = Twist()
 	
 	def nd_logger(self,msg):
@@ -34,15 +34,15 @@ class demo_controller:
 	
 	def procedure(self):
 		self.takeoffpub.publish(Empty());	print 'takeoff'
-		sleep(10)
-		self.twist.linear.y = 0.5
+		sleep(20)
+		self.twist.linear.y = 0.1
 		self.cmdpub.publish(self.twist);			print 'twist'
-		sleep(1)
-		self.twist.linear.y = -0.5
+		sleep(2)
+		self.twist.linear.y = -0.1
 		self.cmdpub.publish(self.twist);			print 'reverse'
 		sleep(2)
-		self.hoverpub.publish(Empty());		print 'hover'
-		sleep(2)
+		#self.hoverpub.publish(Empty());		print 'hover'
+		#sleep(2)
 		self.landpub.publish(Empty());		print 'land'
 
 

@@ -3,6 +3,24 @@
           HEADER
           BATTERYPERCENT-VAL
           BATTERYPERCENT
+          STATE-VAL
+          STATE
+          MAGX-VAL
+          MAGX
+          MAGY-VAL
+          MAGY
+          MAGZ-VAL
+          MAGZ
+          PRESSURE-VAL
+          PRESSURE
+          TEMP-VAL
+          TEMP
+          WIND_SPEED-VAL
+          WIND_SPEED
+          WIND_ANGLE-VAL
+          WIND_ANGLE
+          WIND_COMP_ANGLE-VAL
+          WIND_COMP_ANGLE
           ROTX-VAL
           ROTX
           ROTY-VAL
@@ -17,6 +35,28 @@
           VY
           VZ-VAL
           VZ
+          AX-VAL
+          AX
+          AY-VAL
+          AY
+          AZ-VAL
+          AZ
+          TAGS_COUNT-VAL
+          TAGS_COUNT
+          TAGS_TYPE-VAL
+          TAGS_TYPE
+          TAGS_XC-VAL
+          TAGS_XC
+          TAGS_YC-VAL
+          TAGS_YC
+          TAGS_WIDTH-VAL
+          TAGS_WIDTH
+          TAGS_HEIGHT-VAL
+          TAGS_HEIGHT
+          TAGS_ORIENTATION-VAL
+          TAGS_ORIENTATION
+          TAGS_DISTANCE-VAL
+          TAGS_DISTANCE
           TM-VAL
           TM
 ))

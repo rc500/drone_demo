@@ -7,13 +7,36 @@ import struct
 import std_msgs.msg
 
 class Navdata(genpy.Message):
-  _md5sum = "0e8fc2a4b7f377e10e22371c42bfd78b"
+  _md5sum = "519f4c8d8dd741ec8920b3b2a08e63ba"
   _type = "drone_demo/Navdata"
   _has_header = True #flag to mark the presence of a Header object
   _full_text = """Header header
 
+# Navdata including the ARDrone 2 specifica sensors
+# (magnetometer, barometer)
+
 # 0 means no battery, 100 means full battery
 float32 batteryPercent
+
+# 0: Unknown, 1: Init, 2: Landed, 3: Flying, 4: Hovering, 5: Test
+# 6: Taking off, 7: Goto Fix Point, 8: Landing, 9: Looping
+# Note: 3,7 seems to discriminate type of flying (isFly = 3 | 7)
+uint32 state
+
+int32 magX
+int32 magY
+int32 magZ
+
+# pressure sensor
+int32 pressure
+
+# apparently, there was a temperature sensor added as well.
+int32 temp
+
+# wind sensing...
+float32 wind_speed
+float32 wind_angle
+float32 wind_comp_angle
 
 # left/right tilt in degrees (rotation about the X axis)
 float32 rotX
@@ -36,9 +59,23 @@ float32 vy
 # linear velocity (mm/sec)
 float32 vz
 
+#linear accelerations (unit: g)
+float32 ax
+float32 ay
+float32 az
+
+#Tags in Vision Detectoion
+uint32 tags_count
+uint32[] tags_type
+uint32[] tags_xc
+uint32[] tags_yc
+uint32[] tags_width
+uint32[] tags_height
+float32[] tags_orientation
+float32[] tags_distance
+
 #time stamp
 float32 tm
-
 
 ================================================================================
 MSG: std_msgs/Header
@@ -59,8 +96,8 @@ time stamp
 string frame_id
 
 """
-  __slots__ = ['header','batteryPercent','rotX','rotY','rotZ','altd','vx','vy','vz','tm']
-  _slot_types = ['std_msgs/Header','float32','float32','float32','float32','int32','float32','float32','float32','float32']
+  __slots__ = ['header','batteryPercent','state','magX','magY','magZ','pressure','temp','wind_speed','wind_angle','wind_comp_angle','rotX','rotY','rotZ','altd','vx','vy','vz','ax','ay','az','tags_count','tags_type','tags_xc','tags_yc','tags_width','tags_height','tags_orientation','tags_distance','tm']
+  _slot_types = ['std_msgs/Header','float32','uint32','int32','int32','int32','int32','int32','float32','float32','float32','float32','float32','float32','int32','float32','float32','float32','float32','float32','float32','uint32','uint32[]','uint32[]','uint32[]','uint32[]','uint32[]','float32[]','float32[]','float32']
 
   def __init__(self, *args, **kwds):
     """
@@ -70,7 +107,7 @@ string frame_id
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       header,batteryPercent,rotX,rotY,rotZ,altd,vx,vy,vz,tm
+       header,batteryPercent,state,magX,magY,magZ,pressure,temp,wind_speed,wind_angle,wind_comp_angle,rotX,rotY,rotZ,altd,vx,vy,vz,ax,ay,az,tags_count,tags_type,tags_xc,tags_yc,tags_width,tags_height,tags_orientation,tags_distance,tm
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -83,6 +120,24 @@ string frame_id
         self.header = std_msgs.msg.Header()
       if self.batteryPercent is None:
         self.batteryPercent = 0.
+      if self.state is None:
+        self.state = 0
+      if self.magX is None:
+        self.magX = 0
+      if self.magY is None:
+        self.magY = 0
+      if self.magZ is None:
+        self.magZ = 0
+      if self.pressure is None:
+        self.pressure = 0
+      if self.temp is None:
+        self.temp = 0
+      if self.wind_speed is None:
+        self.wind_speed = 0.
+      if self.wind_angle is None:
+        self.wind_angle = 0.
+      if self.wind_comp_angle is None:
+        self.wind_comp_angle = 0.
       if self.rotX is None:
         self.rotX = 0.
       if self.rotY is None:
@@ -97,11 +152,42 @@ string frame_id
         self.vy = 0.
       if self.vz is None:
         self.vz = 0.
+      if self.ax is None:
+        self.ax = 0.
+      if self.ay is None:
+        self.ay = 0.
+      if self.az is None:
+        self.az = 0.
+      if self.tags_count is None:
+        self.tags_count = 0
+      if self.tags_type is None:
+        self.tags_type = []
+      if self.tags_xc is None:
+        self.tags_xc = []
+      if self.tags_yc is None:
+        self.tags_yc = []
+      if self.tags_width is None:
+        self.tags_width = []
+      if self.tags_height is None:
+        self.tags_height = []
+      if self.tags_orientation is None:
+        self.tags_orientation = []
+      if self.tags_distance is None:
+        self.tags_distance = []
       if self.tm is None:
         self.tm = 0.
     else:
       self.header = std_msgs.msg.Header()
       self.batteryPercent = 0.
+      self.state = 0
+      self.magX = 0
+      self.magY = 0
+      self.magZ = 0
+      self.pressure = 0
+      self.temp = 0
+      self.wind_speed = 0.
+      self.wind_angle = 0.
+      self.wind_comp_angle = 0.
       self.rotX = 0.
       self.rotY = 0.
       self.rotZ = 0.
@@ -109,6 +195,17 @@ string frame_id
       self.vx = 0.
       self.vy = 0.
       self.vz = 0.
+      self.ax = 0.
+      self.ay = 0.
+      self.az = 0.
+      self.tags_count = 0
+      self.tags_type = []
+      self.tags_xc = []
+      self.tags_yc = []
+      self.tags_width = []
+      self.tags_height = []
+      self.tags_orientation = []
+      self.tags_distance = []
       self.tm = 0.
 
   def _get_types(self):
@@ -132,7 +229,36 @@ string frame_id
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_struct_4fi4f.pack(_x.batteryPercent, _x.rotX, _x.rotY, _x.rotZ, _x.altd, _x.vx, _x.vy, _x.vz, _x.tm))
+      buff.write(_struct_fI5i6fi6fI.pack(_x.batteryPercent, _x.state, _x.magX, _x.magY, _x.magZ, _x.pressure, _x.temp, _x.wind_speed, _x.wind_angle, _x.wind_comp_angle, _x.rotX, _x.rotY, _x.rotZ, _x.altd, _x.vx, _x.vy, _x.vz, _x.ax, _x.ay, _x.az, _x.tags_count))
+      length = len(self.tags_type)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(struct.pack(pattern, *self.tags_type))
+      length = len(self.tags_xc)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(struct.pack(pattern, *self.tags_xc))
+      length = len(self.tags_yc)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(struct.pack(pattern, *self.tags_yc))
+      length = len(self.tags_width)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(struct.pack(pattern, *self.tags_width))
+      length = len(self.tags_height)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(struct.pack(pattern, *self.tags_height))
+      length = len(self.tags_orientation)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sf'%length
+      buff.write(struct.pack(pattern, *self.tags_orientation))
+      length = len(self.tags_distance)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sf'%length
+      buff.write(struct.pack(pattern, *self.tags_distance))
+      buff.write(_struct_f.pack(self.tm))
     except struct.error as se: self._check_types(se)
     except TypeError as te: self._check_types(te)
 
@@ -160,8 +286,60 @@ string frame_id
         self.header.frame_id = str[start:end]
       _x = self
       start = end
-      end += 36
-      (_x.batteryPercent, _x.rotX, _x.rotY, _x.rotZ, _x.altd, _x.vx, _x.vy, _x.vz, _x.tm,) = _struct_4fi4f.unpack(str[start:end])
+      end += 84
+      (_x.batteryPercent, _x.state, _x.magX, _x.magY, _x.magZ, _x.pressure, _x.temp, _x.wind_speed, _x.wind_angle, _x.wind_comp_angle, _x.rotX, _x.rotY, _x.rotZ, _x.altd, _x.vx, _x.vy, _x.vz, _x.ax, _x.ay, _x.az, _x.tags_count,) = _struct_fI5i6fi6fI.unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_type = struct.unpack(pattern, str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_xc = struct.unpack(pattern, str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_yc = struct.unpack(pattern, str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_width = struct.unpack(pattern, str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_height = struct.unpack(pattern, str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sf'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_orientation = struct.unpack(pattern, str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sf'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_distance = struct.unpack(pattern, str[start:end])
+      start = end
+      end += 4
+      (self.tm,) = _struct_f.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -183,7 +361,36 @@ string frame_id
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_struct_4fi4f.pack(_x.batteryPercent, _x.rotX, _x.rotY, _x.rotZ, _x.altd, _x.vx, _x.vy, _x.vz, _x.tm))
+      buff.write(_struct_fI5i6fi6fI.pack(_x.batteryPercent, _x.state, _x.magX, _x.magY, _x.magZ, _x.pressure, _x.temp, _x.wind_speed, _x.wind_angle, _x.wind_comp_angle, _x.rotX, _x.rotY, _x.rotZ, _x.altd, _x.vx, _x.vy, _x.vz, _x.ax, _x.ay, _x.az, _x.tags_count))
+      length = len(self.tags_type)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(self.tags_type.tostring())
+      length = len(self.tags_xc)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(self.tags_xc.tostring())
+      length = len(self.tags_yc)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(self.tags_yc.tostring())
+      length = len(self.tags_width)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(self.tags_width.tostring())
+      length = len(self.tags_height)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sI'%length
+      buff.write(self.tags_height.tostring())
+      length = len(self.tags_orientation)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sf'%length
+      buff.write(self.tags_orientation.tostring())
+      length = len(self.tags_distance)
+      buff.write(_struct_I.pack(length))
+      pattern = '<%sf'%length
+      buff.write(self.tags_distance.tostring())
+      buff.write(_struct_f.pack(self.tm))
     except struct.error as se: self._check_types(se)
     except TypeError as te: self._check_types(te)
 
@@ -212,12 +419,65 @@ string frame_id
         self.header.frame_id = str[start:end]
       _x = self
       start = end
-      end += 36
-      (_x.batteryPercent, _x.rotX, _x.rotY, _x.rotZ, _x.altd, _x.vx, _x.vy, _x.vz, _x.tm,) = _struct_4fi4f.unpack(str[start:end])
+      end += 84
+      (_x.batteryPercent, _x.state, _x.magX, _x.magY, _x.magZ, _x.pressure, _x.temp, _x.wind_speed, _x.wind_angle, _x.wind_comp_angle, _x.rotX, _x.rotY, _x.rotZ, _x.altd, _x.vx, _x.vy, _x.vz, _x.ax, _x.ay, _x.az, _x.tags_count,) = _struct_fI5i6fi6fI.unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_type = numpy.frombuffer(str[start:end], dtype=numpy.uint32, count=length)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_xc = numpy.frombuffer(str[start:end], dtype=numpy.uint32, count=length)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_yc = numpy.frombuffer(str[start:end], dtype=numpy.uint32, count=length)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_width = numpy.frombuffer(str[start:end], dtype=numpy.uint32, count=length)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sI'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_height = numpy.frombuffer(str[start:end], dtype=numpy.uint32, count=length)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sf'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_orientation = numpy.frombuffer(str[start:end], dtype=numpy.float32, count=length)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      pattern = '<%sf'%length
+      start = end
+      end += struct.calcsize(pattern)
+      self.tags_distance = numpy.frombuffer(str[start:end], dtype=numpy.float32, count=length)
+      start = end
+      end += 4
+      (self.tm,) = _struct_f.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_4fi4f = struct.Struct("<4fi4f")
 _struct_3I = struct.Struct("<3I")
+_struct_fI5i6fi6fI = struct.Struct("<fI5i6fi6fI")
+_struct_f = struct.Struct("<f")

@@ -4,6 +4,7 @@
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/ROSBUILD_genmsg_py
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/ROSBUILD_gensrv_cpp
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/ROSBUILD_gensrv_lisp
+5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/ROSBUILD_gensrv_py
 83f9cc0b46711839d01f4c776717ef8e CMakeFiles/clean-test-results
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/rosbuild_precompile
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/rosbuild_premsgsrvgen
@@ -11,6 +12,7 @@
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/rospack_genmsg_all
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/rospack_genmsg_libexe
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/rospack_gensrv
+5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/rospack_gensrv_all
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/test
 5f11ce1d25aba12b9b9cd87c83ee86fb CMakeFiles/test-future
 f6112de18f717ddd9443060d9ff7fa85 CMakeFiles/test-results
@@ -20,3 +22,13 @@ f37cd84b803770389f08f6f61608a8a5 msg_gen/cpp/include/drone_demo/Navdata.h
 7e9d807a1745f7ebe5d788f2140b1a3d msg_gen/lisp/Navdata.lisp
 649ad2edfe8a826b7d43275cc33a6e44 src/drone_demo/msg/_Navdata.py
 175d10729a6efcbecf140f0435b116dc src/drone_demo/msg/__init__.py
+c3c7d62964e76e46e2177b66c37fd478 src/drone_demo/srv/_CamSelect.py
+061eedd46f5bfac29fe67012466f3d12 src/drone_demo/srv/_HullSelect.py
+82669f4b1934b7bafa2a9b739cac4df0 src/drone_demo/srv/_LedAnim.py
+1773a87ab629ce431e03b18815e6cc93 src/drone_demo/srv/__init__.py
+d0b20f5c007355fe66b16c54548fe965 srv_gen/cpp/include/drone_demo/CamSelect.h
+e906ea00e45f4bbab2e63c451b44c1e2 srv_gen/cpp/include/drone_demo/HullSelect.h
+e6e02390057f1ba3e01cc833382204a6 srv_gen/cpp/include/drone_demo/LedAnim.h
+bb4418bc7bd6ab9ca98c35e2a2b2c301 srv_gen/lisp/CamSelect.lisp
+b136e2265dca680807eea66e521ddf06 srv_gen/lisp/HullSelect.lisp
+26c2121e35fcd32e0cf8604549d111c9 srv_gen/lisp/LedAnim.lisp

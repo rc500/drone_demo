@@ -36,8 +36,8 @@ class image_conv_processor:
 		except CvBridgeError, e:
 			print e
 	
-		oim_size = (320, 240)
-		im_size = (176, 144)
+		oim_size = (640, 320)
+		im_size = (640, 320)
 		cv_im_midp = (im_size[0]/2,im_size[1]/2)
 		
 		#convert cv to PIL

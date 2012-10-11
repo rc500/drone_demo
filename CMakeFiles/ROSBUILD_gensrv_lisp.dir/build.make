@@ -42,9 +42,86 @@ CMAKE_BINARY_DIR = /home/rujian/fuerte_workspace/drone_demo
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_gensrv_lisp.dir/progress.make
 
-CMakeFiles/ROSBUILD_gensrv_lisp:
+CMakeFiles/ROSBUILD_gensrv_lisp: srv_gen/lisp/CamSelect.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: srv_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: srv_gen/lisp/_package_CamSelect.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: srv_gen/lisp/HullSelect.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: srv_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: srv_gen/lisp/_package_HullSelect.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: srv_gen/lisp/LedAnim.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: srv_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_gensrv_lisp: srv_gen/lisp/_package_LedAnim.lisp
+
+srv_gen/lisp/CamSelect.lisp: srv/CamSelect.srv
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+srv_gen/lisp/CamSelect.lisp: manifest.xml
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/stacks/vision_opencv/cv_bridge/manifest.xml
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+srv_gen/lisp/CamSelect.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating srv_gen/lisp/CamSelect.lisp, srv_gen/lisp/_package.lisp, srv_gen/lisp/_package_CamSelect.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/rujian/fuerte_workspace/drone_demo/srv/CamSelect.srv
+
+srv_gen/lisp/_package.lisp: srv_gen/lisp/CamSelect.lisp
+
+srv_gen/lisp/_package_CamSelect.lisp: srv_gen/lisp/CamSelect.lisp
+
+srv_gen/lisp/HullSelect.lisp: srv/HullSelect.srv
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+srv_gen/lisp/HullSelect.lisp: manifest.xml
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/stacks/vision_opencv/cv_bridge/manifest.xml
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+srv_gen/lisp/HullSelect.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating srv_gen/lisp/HullSelect.lisp, srv_gen/lisp/_package.lisp, srv_gen/lisp/_package_HullSelect.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/rujian/fuerte_workspace/drone_demo/srv/HullSelect.srv
+
+srv_gen/lisp/_package.lisp: srv_gen/lisp/HullSelect.lisp
+
+srv_gen/lisp/_package_HullSelect.lisp: srv_gen/lisp/HullSelect.lisp
+
+srv_gen/lisp/LedAnim.lisp: srv/LedAnim.srv
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+srv_gen/lisp/LedAnim.lisp: manifest.xml
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/stacks/vision_opencv/opencv2/manifest.xml
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/stacks/vision_opencv/cv_bridge/manifest.xml
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+srv_gen/lisp/LedAnim.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rujian/fuerte_workspace/drone_demo/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating srv_gen/lisp/LedAnim.lisp, srv_gen/lisp/_package.lisp, srv_gen/lisp/_package_LedAnim.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/rujian/fuerte_workspace/drone_demo/srv/LedAnim.srv
+
+srv_gen/lisp/_package.lisp: srv_gen/lisp/LedAnim.lisp
+
+srv_gen/lisp/_package_LedAnim.lisp: srv_gen/lisp/LedAnim.lisp
 
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp
+ROSBUILD_gensrv_lisp: srv_gen/lisp/CamSelect.lisp
+ROSBUILD_gensrv_lisp: srv_gen/lisp/_package.lisp
+ROSBUILD_gensrv_lisp: srv_gen/lisp/_package_CamSelect.lisp
+ROSBUILD_gensrv_lisp: srv_gen/lisp/HullSelect.lisp
+ROSBUILD_gensrv_lisp: srv_gen/lisp/_package.lisp
+ROSBUILD_gensrv_lisp: srv_gen/lisp/_package_HullSelect.lisp
+ROSBUILD_gensrv_lisp: srv_gen/lisp/LedAnim.lisp
+ROSBUILD_gensrv_lisp: srv_gen/lisp/_package.lisp
+ROSBUILD_gensrv_lisp: srv_gen/lisp/_package_LedAnim.lisp
 ROSBUILD_gensrv_lisp: CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make
 .PHONY : ROSBUILD_gensrv_lisp
 
